@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lpLhYY6Dy44P/jngQ7PqMg181mUQgrhe4wDOsvZE8yWq8vj5hCdCxZfyKd6WK/HfPf4xkHBgu+t43Motgo5DgQ==",
+  "dgSpecHash": "X1N1H/FoeV75DmHCMZ5/zW0yw4lllXrlkKVMpEr6M6k0vCVD7yM1jIxHWmjwoLVmYL6TQCXre4UUhYgEYTF/4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FPT\\source\\repos\\InventoryManagement\\InventoryManagement\\InventoryManagement.csproj",
+  "projectFilePath": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\InventoryManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FPT\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\FPT\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\FPT\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\FPT\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\FPT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\FPT\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
