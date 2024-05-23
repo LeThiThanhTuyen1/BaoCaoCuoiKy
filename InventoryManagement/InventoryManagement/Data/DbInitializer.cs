@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using InventoryManagement.Models;
+using InventoryManagement.Data;
 
 namespace InventoryManagement.Data
 {

@@ -1,13 +1,17 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-public class Supplier
+namespace InventoryManagement.Models
 {
-    public int SupplierId { get; set; }
+    public class Supplier
+    {
+        public int SupplierId { get; set; }
 
-    [Required]
-    public string? Name { get; set; }
+        [Required]
+        public string? Name { get; set; }
 
-    public string? Address { get; set; }
+        public string? Address { get; set; }
 
-    public string? Contact { get; set; }
+        public string? Contact { get; set; }
+    }
 }
+
