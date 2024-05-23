@@ -1,8 +1,8 @@
-﻿using InventoryManagement.Models;
+﻿
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Collections.Generic;
+
 namespace InventoryManagement.Models
 {
     public class Account
@@ -18,5 +18,7 @@ namespace InventoryManagement.Models
         [ForeignKey("Manager")]
         public int ManagerId { get; set; }
         public Manager? Manager { get; set; }
+
+        public string? Role { get; set; } // Admin or Manager
     }
 }
