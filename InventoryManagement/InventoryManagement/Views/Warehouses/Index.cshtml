@@ -1,22 +1,32 @@
-﻿@model IEnumerable<InventoryManagement.Models.Warehouse>
+﻿@model PaginatedList<InventoryManagement.Models.Warehouse>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Kho hàng";
 }
 
-<h1>Index</h1>
+<h1>Danh sách kho hàng</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Tạo mới</a>
 </p>
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Tìm kiếm  
+            <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên kho hay địa chỉ" />
+            <input type="submit" value="Tìm" class="btn btn-default" /> |
+            <a asp-action="Index">Trở về danh sách đầy đủ</a>
+        </p>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-warehouseFilter="@ViewData["CurrentWarehouseFilter"]">Tên kho hàng</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Location)
+                Vị trí
             </th>
             <th></th>
         </tr>
@@ -31,11 +41,34 @@
                 @Html.DisplayFor(modelItem => item.Location)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.WarehouseID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.WarehouseID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.WarehouseID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.WarehouseID">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.WarehouseID">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.WarehouseID">Xóa</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<div class="pagination">
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+
+    <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
+       asp-route-pageNumber="@(Model.PageIndex - 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-warehouseFilter="@ViewData["CurrentWarehouseFilter"]"
+       class="btn btn-default @prevDisabled">
+        Trước
+    </a>
+    <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
+       asp-route-pageNumber="@(Model.PageIndex + 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-warehouseFilter="@ViewData["CurrentWarehouseFilter"]"
+       class="btn btn-default @nextDisabled">
+        Tiếp
+    </a>
+</div>

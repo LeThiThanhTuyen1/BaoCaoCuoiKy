@@ -19,9 +19,46 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Warehouses
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(
+            string sortOrder,
+            string currentFilter,
+            string searchString,
+            int? pageNumber)
         {
-            return View(await _context.Warehouses.ToListAsync());
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["CurrentFilter"] = searchString;
+
+            if (searchString != null )
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var warehouses = from s in _context.Warehouses
+                           select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                warehouses = warehouses.Where(s => s.Name.Contains(searchString)
+                                       || s.Location.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    warehouses = warehouses.OrderByDescending(s => s.Name);
+                    break;
+                default:
+                    warehouses = warehouses.OrderBy(s => s.Name);
+                    break;
+            }
+
+            int pageSize = 5;
+            return View(await PaginatedList<Warehouse>.CreateAsync(warehouses.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Warehouses/Details/5

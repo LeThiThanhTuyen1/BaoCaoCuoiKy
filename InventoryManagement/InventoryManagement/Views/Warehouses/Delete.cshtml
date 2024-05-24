@@ -1,14 +1,14 @@
 ﻿@model InventoryManagement.Models.Warehouse
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Xóa kho hàng";
 }
 
-<h1>Delete</h1>
+<h1>Xóa</h1>
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Warehouse</h4>
+    <h4>Kho</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -27,7 +27,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="WarehouseID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+        <a asp-action="Index">Trờ về</a>
     </form>
 </div>

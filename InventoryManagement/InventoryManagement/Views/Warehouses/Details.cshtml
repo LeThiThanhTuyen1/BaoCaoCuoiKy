@@ -1,13 +1,13 @@
 ﻿@model InventoryManagement.Models.Warehouse
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết kho";
 }
 
-<h1>Details</h1>
+<h1>Chi tiết</h1>
 
 <div>
-    <h4>Warehouse</h4>
+    <h4>Kho</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -25,6 +25,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.WarehouseID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.WarehouseID">Sửa</a> |
+    <a asp-action="Index">Trờ về</a>
 </div>
