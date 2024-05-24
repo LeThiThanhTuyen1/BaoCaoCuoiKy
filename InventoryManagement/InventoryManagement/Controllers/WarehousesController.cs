@@ -9,23 +9,22 @@ using InventoryManagement.Models;
 
 namespace InventoryManagement.Controllers
 {
-    public class ManagersController : Controller
+    public class WarehousesController : Controller
     {
         private readonly InventoryContext _context;
 
-        public ManagersController(InventoryContext context)
+        public WarehousesController(InventoryContext context)
         {
             _context = context;
         }
 
-        // GET: Managers
+        // GET: Warehouses
         public async Task<IActionResult> Index()
         {
-            var inventoryContext = _context.Managers.Include(m => m.Warehouse);
-            return View(await inventoryContext.ToListAsync());
+            return View(await _context.Warehouses.ToListAsync());
         }
 
-        // GET: Managers/Details/5
+        // GET: Warehouses/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,42 +32,39 @@ namespace InventoryManagement.Controllers
                 return NotFound();
             }
 
-            var manager = await _context.Managers
-                .Include(m => m.Warehouse)
-                .FirstOrDefaultAsync(m => m.ManagerId == id);
-            if (manager == null)
+            var warehouse = await _context.Warehouses
+                .FirstOrDefaultAsync(m => m.WarehouseID == id);
+            if (warehouse == null)
             {
                 return NotFound();
             }
 
-            return View(manager);
+            return View(warehouse);
         }
 
-        // GET: Managers/Create
+        // GET: Warehouses/Create
         public IActionResult Create()
         {
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID");
             return View();
         }
 
-        // POST: Managers/Create
+        // POST: Warehouses/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ManagerId,Name,Address,Contact,WarehouseID")] Manager manager)
+        public async Task<IActionResult> Create([Bind("WarehouseID,Name,Location")] Warehouse warehouse)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(manager);
+                _context.Add(warehouse);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", manager.WarehouseID);
-            return View(manager);
+            return View(warehouse);
         }
 
-        // GET: Managers/Edit/5
+        // GET: Warehouses/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -76,23 +72,22 @@ namespace InventoryManagement.Controllers
                 return NotFound();
             }
 
-            var manager = await _context.Managers.FindAsync(id);
-            if (manager == null)
+            var warehouse = await _context.Warehouses.FindAsync(id);
+            if (warehouse == null)
             {
                 return NotFound();
             }
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", manager.WarehouseID);
-            return View(manager);
+            return View(warehouse);
         }
 
-        // POST: Managers/Edit/5
+        // POST: Warehouses/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ManagerId,Name,Address,Contact,WarehouseID")] Manager manager)
+        public async Task<IActionResult> Edit(int id, [Bind("WarehouseID,Name,Location")] Warehouse warehouse)
         {
-            if (id != manager.ManagerId)
+            if (id != warehouse.WarehouseID)
             {
                 return NotFound();
             }
@@ -101,12 +96,12 @@ namespace InventoryManagement.Controllers
             {
                 try
                 {
-                    _context.Update(manager);
+                    _context.Update(warehouse);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ManagerExists(manager.ManagerId))
+                    if (!WarehouseExists(warehouse.WarehouseID))
                     {
                         return NotFound();
                     }
@@ -117,11 +112,10 @@ namespace InventoryManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", manager.WarehouseID);
-            return View(manager);
+            return View(warehouse);
         }
 
-        // GET: Managers/Delete/5
+        // GET: Warehouses/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -129,35 +123,34 @@ namespace InventoryManagement.Controllers
                 return NotFound();
             }
 
-            var manager = await _context.Managers
-                .Include(m => m.Warehouse)
-                .FirstOrDefaultAsync(m => m.ManagerId == id);
-            if (manager == null)
+            var warehouse = await _context.Warehouses
+                .FirstOrDefaultAsync(m => m.WarehouseID == id);
+            if (warehouse == null)
             {
                 return NotFound();
             }
 
-            return View(manager);
+            return View(warehouse);
         }
 
-        // POST: Managers/Delete/5
+        // POST: Warehouses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var manager = await _context.Managers.FindAsync(id);
-            if (manager != null)
+            var warehouse = await _context.Warehouses.FindAsync(id);
+            if (warehouse != null)
             {
-                _context.Managers.Remove(manager);
+                _context.Warehouses.Remove(warehouse);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ManagerExists(int id)
+        private bool WarehouseExists(int id)
         {
-            return _context.Managers.Any(e => e.ManagerId == id);
+            return _context.Warehouses.Any(e => e.WarehouseID == id);
         }
     }
 }

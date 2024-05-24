@@ -12,11 +12,14 @@ public class InventoryContext : DbContext
     public DbSet<Supplier> Suppliers { get; set; }
     public DbSet<Manager> Managers { get; set; }
     public DbSet<Account> Accounts { get; set; }
+    public DbSet<Warehouse> Warehouses { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Product>().ToTable("Product");
         modelBuilder.Entity<Supplier>().ToTable("Supplier");
         modelBuilder.Entity<Manager>().ToTable("Manager");
         modelBuilder.Entity<Account>().ToTable("Account");
+        modelBuilder.Entity<Warehouse>().ToTable("Warehouse");
     }
 }

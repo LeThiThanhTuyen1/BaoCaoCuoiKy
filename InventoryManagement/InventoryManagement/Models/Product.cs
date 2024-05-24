@@ -7,24 +7,24 @@ namespace InventoryManagement.Models
     public class Product
     {
         public int ID { get; set; }
-        public string? ProductID { get; set; }
+        public string ProductID { get; set; } // Fixed: Removed '?'
 
         [Required]
-        public string? Name { get; set; }
+        public string Name { get; set; } // Fixed: Removed '?'
 
-        public string? Description { get; set; }
+        public string Description { get; set; } // Fixed: Removed '?'
 
         public decimal Price { get; set; }
-
         public int Quantity { get; set; }
         public DateTime EntryDate { get; set; }
-
         [ForeignKey("Supplier")]
-        public int SupplierId { get; set; }
-        public Supplier? Supplier { get; set; }
-
-        public string? WarehouseType { get; set; } // Kho A, kho B, kho C
-
+        public int SupplierId { get; set; } // Fixed: Renamed from Supplier
+        public Supplier Supplier { get; set; }
+        
+        [ForeignKey("Warehouse")]
+        public int WarehouseID { get; set; } // Fixed: Renamed from Warehouse
+        public Warehouse Warehouse { get; set; }
     }
+
 }
 

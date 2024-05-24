@@ -1,4 +1,4 @@
-﻿@model InventoryManagement.Models.Manager
+﻿@model InventoryManagement.Models.Warehouse
 
 @{
     ViewData["Title"] = "Create";
@@ -6,7 +6,7 @@
 
 <h1>Create</h1>
 
-<h4>Manager</h4>
+<h4>Warehouse</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,18 +18,9 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Contact" class="control-label"></label>
-                <input asp-for="Contact" class="form-control" />
-                <span asp-validation-for="Contact" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="WarehouseID" class="control-label"></label>
-                <select asp-for="WarehouseID" class ="form-control" asp-items="ViewBag.WarehouseID"></select>
+                <label asp-for="Location" class="control-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

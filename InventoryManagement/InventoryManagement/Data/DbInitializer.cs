@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using InventoryManagement.Models;
-using InventoryManagement.Data;
 
 namespace InventoryManagement.Data
 {
@@ -14,8 +13,20 @@ namespace InventoryManagement.Data
             // Look for any products.
             if (context.Products.Any())
             {
-                return;   // DB has been seeded
+                return; // DB has been seeded
             }
+
+            var warehouses = new Warehouse[]
+            {
+                new Warehouse { Name = "Kho A", Location = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn" },
+                new Warehouse { Name = "Kho B", Location = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn" },
+                new Warehouse { Name = "Kho C", Location = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn" }
+            };
+            foreach (var warehouse in warehouses)
+            {
+                context.Warehouses.Add(warehouse);
+            }
+            context.SaveChanges(); // Save warehouses to generate IDs
 
             var suppliers = new Supplier[]
             {
@@ -54,23 +65,186 @@ namespace InventoryManagement.Data
             {
                 context.Suppliers.Add(supplier);
             }
-            context.SaveChanges();
+            context.SaveChanges(); // Save suppliers to generate IDs
 
             var managers = new Manager[]
             {
-                new Manager { Name = "Nguyễn Văn An", Address = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn", Contact = "0868425266", ManagedWarehouse = "Kho A" },
-                new Manager { Name = "Manager B", Address = "Address for Manager B", Contact = "Contact for Manager B", ManagedWarehouse = "Kho B" }
+                new Manager { Name = "Nguyễn Văn An", Address = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn", Contact = "0868425266", WarehouseID = warehouses[0].WarehouseID },
+                new Manager { Name = "Manager B", Address = "Address for Manager B", Contact = "Contact for Manager B", WarehouseID = warehouses[1].WarehouseID }
             };
             foreach (var manager in managers)
             {
                 context.Managers.Add(manager);
             }
-            context.SaveChanges();
+            context.SaveChanges(); // Save managers to generate IDs
+
+            var accounts = new Account[]
+            {
+                new Account { Username = "admin", Password = "admin", Role = "Admin", ManagerId = managers[0].ManagerId },
+                new Account { Username = "manager", Password = "manager", Role = "Manager", ManagerId = managers[1].ManagerId }
+            };
+            foreach (var account in accounts)
+            {
+                context.Accounts.Add(account);
+            }
+            context.SaveChanges(); // Save accounts to generate IDs
 
             var products = new Product[]
             {
-                new Product {ProductID = "A01",  Name = "Tủ gỗ thông", Description = "Description for Product 1", Price = 10.5m, Quantity = 100, EntryDate = DateTime.Parse("2024-05-11"), SupplierId = 1, WarehouseType = "Kho A" },
-                new Product {ProductID = "A02", Name = "Product 2", Description = "Description for Product 2", Price = 20.75m, Quantity = 50, EntryDate = DateTime.Parse("2024-05-12"), SupplierId = 2, WarehouseType = "Kho B" }
+                new Product
+                {
+                    ProductID = "P001",
+                    Name = "Gỗ Sồi",
+                    Description = "Gỗ Sồi chất lượng cao, xuất xứ từ châu Âu",
+                    Price = 5000000,
+                    Quantity = 100,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[0].SupplierId,
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P002",
+                    Name = "Gỗ Tràm",
+                    Description = "Gỗ Tràm tự nhiên, màu sắc đẹp",
+                    Price = 3500000,
+                    Quantity = 200,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[1].SupplierId,
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P003",
+                    Name = "Gỗ Lim",
+                    Description = "Gỗ Lim chắc chắn, bền bỉ",
+                    Price = 7000000,
+                    Quantity = 150,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[2].SupplierId,
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P004",
+                    Name = "Gỗ Thông",
+                    Description = "Gỗ Thông nhẹ, dễ thi công",
+                    Price = 4000000,
+                    Quantity = 180,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[3].SupplierId,
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P005",
+                    Name = "Gỗ Hương",
+                    Description = "Gỗ Hương có mùi thơm tự nhiên",
+                    Price = 8000000,
+                    Quantity = 120,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[4].SupplierId,
+                    WarehouseID = warehouses[2].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P006",
+                    Name = "Gỗ Dẻ",
+                    Description = "Gỗ Dẻ bền chắc, dễ gia công",
+                    Price = 5500000,
+                    Quantity = 80,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[0].SupplierId,
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P007",
+                    Name = "Gỗ Xoan",
+                    Description = "Gỗ Xoan chịu nước tốt, bền màu",
+                    Price = 3200000,
+                    Quantity = 220,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[1].SupplierId,
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P008",
+                    Name = "Gỗ Pơ Mu",
+                    Description = "Gỗ Pơ Mu chịu nhiệt, ít cong vênh",
+                    Price = 7500000,
+                    Quantity = 130,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[2].SupplierId,
+                    WarehouseID = warehouses[2].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P009",
+                    Name = "Gỗ Bạch Đàn",
+                    Description = "Gỗ Bạch Đàn vân gỗ đẹp, độ bền cao",
+                    Price = 4200000,
+                    Quantity = 190,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[3].SupplierId,
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P010",
+                    Name = "Gỗ Tần Bì",
+                    Description = "Gỗ Tần Bì có vân gỗ đẹp, độ bền cao",
+                    Price = 8200000,
+                    Quantity = 110,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[4].SupplierId,
+                    WarehouseID = warehouses[2].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P011",
+                    Name = "Gỗ Mít",
+                    Description = "Gỗ Mít có màu vàng đẹp, dễ chế tác",
+                    Price = 3000000,
+                    Quantity = 240,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[1].SupplierId,
+                    WarehouseID = warehouses[2].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P012",
+                    Name = "Gỗ Chò",
+                    Description = "Gỗ Chò có màu sắc đẹp, dễ chế tác",
+                    Price = 7200000,
+                    Quantity = 140,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[2].SupplierId,
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P013",
+                    Name = "Gỗ Gụ",
+                    Description = "Gỗ Gụ có màu đẹp, rất bền",
+                    Price = 4300000,
+                    Quantity = 170,
+                                        EntryDate = DateTime.Now,
+                    SupplierId = suppliers[3].SupplierId,
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Product
+                {
+                    ProductID = "P014",
+                    Name = "Gỗ Trắc",
+                    Description = "Gỗ Trắc có độ bền cao, màu đẹp",
+                    Price = 8500000,
+                    Quantity = 100,
+                    EntryDate = DateTime.Now,
+                    SupplierId = suppliers[4].SupplierId,
+                    WarehouseID = warehouses[1].WarehouseID
+                }
             };
             foreach (var product in products)
             {
@@ -80,3 +254,4 @@ namespace InventoryManagement.Data
         }
     }
 }
+

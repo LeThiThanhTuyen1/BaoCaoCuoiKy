@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using InventoryManagement;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Models;
-using InventoryManagement.Data;
 
 namespace InventoryManagement.Controllers
 {
@@ -21,54 +19,10 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index(
-            string sortOrder,
-            string currentFilter,
-            string searchString,
-            int? pageNumber)
+        public async Task<IActionResult> Index()
         {
-            ViewData["CurrentSort"] = sortOrder;
-            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewData["SupplierSortParm"] = String.IsNullOrEmpty(sortOrder) ? "supplier_desc" : "";
-            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
-            ViewData["CurrentFilter"] = searchString;
-
-            if (searchString != null)
-            {
-                pageNumber = 1;
-            }
-            else
-            {
-                searchString = currentFilter;
-            }
-
-            var products = from s in _context.Products.Include(p => p.Supplier)
-                           select s;
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                products = products.Where(s => s.Name.Contains(searchString)
-                                       || s.Name.Contains(searchString));
-            }
-            switch (sortOrder)
-            {
-                case "name_desc":
-                    products = products.OrderByDescending(s => s.Name);
-                    break;
-                case "supplier_desc":
-                    products = products.OrderByDescending(s => s.Supplier);
-                    break;
-                case "Date":
-                    products = products.OrderBy(s => s.EntryDate);
-                    break;
-                case "date_desc":
-                    products = products.OrderByDescending(s => s.EntryDate);
-                    break;
-                default:
-                    products = products.OrderBy(s => s.Name);
-                    break;
-            }
-            int pageSize = 8;
-            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
+            var inventoryContext = _context.Products.Include(p => p.Supplier).Include(p => p.Warehouse);
+            return View(await inventoryContext.ToListAsync());
         }
 
         // GET: Products/Details/5
@@ -81,6 +35,7 @@ namespace InventoryManagement.Controllers
 
             var product = await _context.Products
                 .Include(p => p.Supplier)
+                .Include(p => p.Warehouse)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (product == null)
             {
@@ -94,6 +49,7 @@ namespace InventoryManagement.Controllers
         public IActionResult Create()
         {
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name");
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID");
             return View();
         }
 
@@ -102,7 +58,7 @@ namespace InventoryManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,Name,Description,Price,Quantity,SupplierId,WarehouseType")] Product product)
+        public async Task<IActionResult> Create([Bind("ID,ProductID,Name,Description,Price,Quantity,EntryDate,SupplierId,WarehouseID")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -111,6 +67,7 @@ namespace InventoryManagement.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name", product.SupplierId);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", product.WarehouseID);
             return View(product);
         }
 
@@ -128,13 +85,16 @@ namespace InventoryManagement.Controllers
                 return NotFound();
             }
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name", product.SupplierId);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", product.WarehouseID);
             return View(product);
         }
 
         // POST: Products/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,ProductID,Name,Description,Price,Quantity,EntryDate,SupplierId,WarehouseType")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,ProductID,Name,Description,Price,Quantity,EntryDate,SupplierId,WarehouseID")] Product product)
         {
             if (id != product.ID)
             {
@@ -162,9 +122,9 @@ namespace InventoryManagement.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name", product.SupplierId);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", product.WarehouseID);
             return View(product);
         }
-
 
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -176,6 +136,7 @@ namespace InventoryManagement.Controllers
 
             var product = await _context.Products
                 .Include(p => p.Supplier)
+                .Include(p => p.Warehouse)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (product == null)
             {

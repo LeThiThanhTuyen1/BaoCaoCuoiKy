@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Manager>
+﻿@model IEnumerable<InventoryManagement.Models.Manager>
 
 @{
     ViewData["Title"] = "Index";
@@ -22,7 +22,7 @@
                 @Html.DisplayNameFor(model => model.Contact)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ManagedWarehouse)
+                @Html.DisplayNameFor(model => model.Warehouse)
             </th>
             <th></th>
         </tr>
@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Contact)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ManagedWarehouse)
+                @Html.DisplayFor(modelItem => item.Warehouse.WarehouseID)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ManagerId">Edit</a> |

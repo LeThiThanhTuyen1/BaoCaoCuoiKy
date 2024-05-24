@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace InventoryManagement.Models
 {
     public class Manager
@@ -13,6 +14,8 @@ namespace InventoryManagement.Models
 
         public string? Contact { get; set; }
 
-        public string? ManagedWarehouse { get; set; } // Kho mà người quản lý chịu trách nhiệm
+        [ForeignKey("Warehouse")]
+        public int WarehouseID { get; set; }
+        public Warehouse? Warehouse { get; set; }
     }
 }

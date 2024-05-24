@@ -1,4 +1,4 @@
-﻿@model Product
+﻿@model InventoryManagement.Models.Product
 
 @{
     ViewData["Title"] = "Delete";
@@ -11,10 +11,10 @@
     <h4>Product</h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ProductID)
         </dt>
-        <dd class="col-sm-10">
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ProductID)
         </dd>
         <dt class = "col-sm-2">
@@ -41,10 +41,10 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Quantity)
         </dd>
-        <dt class="col-sm-2">
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.EntryDate)
         </dt>
-        <dd class="col-sm-10">
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.EntryDate)
         </dd>
         <dt class = "col-sm-2">
@@ -54,10 +54,10 @@
             @Html.DisplayFor(model => model.Supplier.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.WarehouseType)
+            @Html.DisplayNameFor(model => model.Warehouse)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.WarehouseType)
+            @Html.DisplayFor(model => model.Warehouse.WarehouseID)
         </dd>
     </dl>
     
