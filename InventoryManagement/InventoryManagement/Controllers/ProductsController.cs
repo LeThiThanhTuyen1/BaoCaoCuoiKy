@@ -81,7 +81,7 @@ namespace InventoryManagement.Controllers
 
             var product = await _context.Products
                 .Include(p => p.Supplier)
-                .FirstOrDefaultAsync(m => m.ProductId == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (product == null)
             {
                 return NotFound();
@@ -132,13 +132,11 @@ namespace InventoryManagement.Controllers
         }
 
         // POST: Products/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,Name,Description,Price,Quantity,SupplierId,WarehouseType")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,ProductID,Name,Description,Price,Quantity,EntryDate,SupplierId,WarehouseType")] Product product)
         {
-            if (id != product.ProductId)
+            if (id != product.ID)
             {
                 return NotFound();
             }
@@ -152,7 +150,7 @@ namespace InventoryManagement.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductExists(product.ProductId))
+                    if (!ProductExists(product.ID))
                     {
                         return NotFound();
                     }
@@ -167,6 +165,7 @@ namespace InventoryManagement.Controllers
             return View(product);
         }
 
+
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -177,7 +176,7 @@ namespace InventoryManagement.Controllers
 
             var product = await _context.Products
                 .Include(p => p.Supplier)
-                .FirstOrDefaultAsync(m => m.ProductId == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (product == null)
             {
                 return NotFound();
@@ -203,7 +202,7 @@ namespace InventoryManagement.Controllers
 
         private bool ProductExists(int id)
         {
-            return _context.Products.Any(e => e.ProductId == id);
+            return _context.Products.Any(e => e.ID == id);
         }
     }
 }

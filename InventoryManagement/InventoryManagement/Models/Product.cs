@@ -6,7 +6,8 @@ namespace InventoryManagement.Models
 {
     public class Product
     {
-        public int ProductId { get; set; }
+        public int ID { get; set; }
+        public string? ProductID { get; set; }
 
         [Required]
         public string? Name { get; set; }
