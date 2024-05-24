@@ -19,8 +19,8 @@ namespace InventoryManagement.Data
             var warehouses = new Warehouse[]
             {
                 new Warehouse { Name = "Kho A", Location = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn" },
-                new Warehouse { Name = "Kho B", Location = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn" },
-                new Warehouse { Name = "Kho C", Location = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn" }
+                new Warehouse { Name = "Kho B", Location = "45 Phường Nhơn Trãi, Huyện An Nhơn, Bình Định" },
+                new Warehouse { Name = "Kho C", Location = "Quốc Lộ 1, Phường Nhơn Hưng, Huyện An Nhơn, Bình Định" }
             };
             foreach (var warehouse in warehouses)
             {
