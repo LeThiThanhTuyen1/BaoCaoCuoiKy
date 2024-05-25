@@ -1,59 +1,108 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Quản lý kho hàng</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link href="~/css/bootstrap.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/InventoryManagement.styles.css" asp-append-version="true" />
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>QUẢN LÝ KHO HÀNG</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link href="~/jon/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/jon/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- style css -->
+    <link href="~/jon/css/style.css" rel="stylesheet" />
+    <!-- Responsive-->
+    <link href="~/jon/css/responsive.css" rel="stylesheet" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link href="~/jon/css/jquery.mcustomscrollbar.min.css" rel="stylesheet" />
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<body>
+<!-- body -->
+<body class="main-layout">
+    <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <!-- header inner -->
+        <div class="header">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Quản lý kho hàng</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Products" asp-action="Index">Hàng</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Managers" asp-action="Index">Quản lý</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Accounts" asp-action="Index">Tài khoản</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/jon/images/logo.png" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Index">Hàng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Managers" asp-action="Index">Quản lý</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Accounts" asp-action="Index">Tài khoản</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <div class="container">
+    <!-- end header inner -->
+    <!-- end header -->
+    <div class="container custom-container">
         <main role="main" class="pb-3">
             @RenderBody()
-        </main>
+        </main> 
     </div>
-
-    <footer class="border-top footer text-muted">
+    <footer 
+       @*  style="padding: 1rem 0!important; position: absolute!important;
+        bottom: 0!important; width: 100%;"  *@
+        class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - Quản lý kho hàng - <a asp-area="" asp-controller="Home" asp-action=""></a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Javascript files-->
+    <script src="~/jon/js/jquery.min.js"></script>
+    <script src="~/jon/js/popper.min.js"></script>
+    <script src="~/jon/js/bootstrap.bundle.min.js"></script>
+    <script src="~/jon/js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="~/jon/js/jquery.mcustomscrollbar.concat.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

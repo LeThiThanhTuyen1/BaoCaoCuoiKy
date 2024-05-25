@@ -189,6 +189,258 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\jon\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\jon\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\jon\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\jon\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\jon\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\jon\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\jon\\css\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\jon\\css\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\jon\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style.css",
+      "PackagePath": "staticwebassets\\jon\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\IcoMoon-Free.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\IcoMoon-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\jon\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\jon\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\jon\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\jon\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\jon\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\banner.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\choose_bottom_cross.png",
+      "PackagePath": "staticwebassets\\jon\\images\\choose_bottom_cross.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\food.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\food.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\h_cross.png",
+      "PackagePath": "staticwebassets\\jon\\images\\h_cross.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon1.png",
+      "PackagePath": "staticwebassets\\jon\\images\\icon1.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon2.png",
+      "PackagePath": "staticwebassets\\jon\\images\\icon2.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon3.png",
+      "PackagePath": "staticwebassets\\jon\\images\\icon3.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon4.png",
+      "PackagePath": "staticwebassets\\jon\\images\\icon4.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img1.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img2.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img3.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\jon\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\logo.png",
+      "PackagePath": "staticwebassets\\jon\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\menu_icon.png",
+      "PackagePath": "staticwebassets\\jon\\images\\menu_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product1.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\product1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product2.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\product2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product3.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\product3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product4.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\product4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product5.jpg",
+      "PackagePath": "staticwebassets\\jon\\images\\product5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\te.png",
+      "PackagePath": "staticwebassets\\jon\\images\\te.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\tes1.png",
+      "PackagePath": "staticwebassets\\jon\\images\\tes1.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\top_head.png",
+      "PackagePath": "staticwebassets\\jon\\images\\top_head.png"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\jon\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery-3.0.0.min.js",
+      "PackagePath": "staticwebassets\\jon\\js\\jquery-3.0.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\jon\\js\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jon\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\jon\\js\\popper.min.js"
+    },
+    {
       "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

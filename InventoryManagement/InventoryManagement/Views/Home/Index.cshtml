@@ -2,10 +2,82 @@
     ViewData["Title"] = "Home Page";
 }
 <head>
-    <meta charset="utf-8" />
-    <link href="~/css/bootstrap.css" rel="stylesheet"/>
+    <style>
+        .custom-container {
+            max-width: none; /* Loại bỏ giới hạn chiều rộng */
+            padding-right: 0; /* Xóa padding phải */
+            padding-left: 0; /* Xóa padding trái */
+            margin-right: auto; /* Canh lề phải tự động */
+            margin-left: auto; /* Canh lề trái tự động */
+        }
+    </style>
 </head>
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- body -->
+<body class="main-layout">
+    <!-- banner -->
+    <section class="banner_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="text-bg">
+                        <h1>QUẢN LÝ KHO</h1>
+                        <p>Chào mừng đến với kho hàng của chúng tôi – nơi lưu trữ và bảo quản hàng hóa an toàn, hiệu quả. Với diện tích rộng rãi, 
+                            trang thiết bị hiện đại và đội ngũ nhân viên chuyên nghiệp, chúng tôi cam kết mang đến dịch vụ kho vận chất lượng cao. 
+                            Tại đây, hàng hóa của bạn sẽ được quản lý chặt chẽ, đảm bảo tình trạng tốt nhất trước khi đến tay khách hàng. 
+                            Hãy để chúng tôi trở thành đối tác tin cậy của bạn trong việc lưu trữ và phân phối hàng hóa!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+    <!-- three_box -->
+    <div class="three_box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box_text">
+                        <figure><img src="~/jon/images/img1.jpg" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box_text">
+                        <figure><img src="~/jon/images/img2.jpg" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box_text">
+                        <figure><img src="~/jon/images/img3.jpg" alt="#" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- three_box -->
+    <!-- hottest -->
+    <div class="hottest">
+        <div class="container">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="titlepage">
+                        <h2>World’s Hottest Destinations <br>for Vegans</h2>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="hottest_box">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hottest -->  
+    <!-- Javascript files-->
+    <script src="~/jon/js/jquery.min.js"></script>
+    <script src="~/jon/js/popper.min.js"></script>
+    <script src="~/jon/js/bootstrap.bundle.min.js"></script>
+    <script src="~/jon/js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="~/jon/js/jquery.mcustomscrollbar.concat.min.js"></script>
+</body>
+
