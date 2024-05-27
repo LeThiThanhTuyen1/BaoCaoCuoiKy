@@ -3,24 +3,56 @@
     ViewBag.Title = "Login";
 }
 
-<h2>Login</h2>
-<br />
-<br />
-<form asp-controller="Accounts" asp-action="Login" method="post">
-    <div class="form-group">
-        <label for="username">Tên đăng nhập</label>
-        <input type="text" class="form-control" id="username" name="username" required />
-    </div>
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password" required />
-    </div>
-    <br />
-    <button type="submit" class="btn btn-primary">Login</button>
-</form>
+ <head>
+    <link href="~/css/style.css" rel="stylesheet" />
+ </head>
 
-@if (ViewBag.ErrorMessage != null)
-{
-    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
-}
+<section class="vh-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 text-black">
+
+                <div class="px-5 ms-xl-4">
+                    <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #ffd700;"></i>
+                    <span class="h1 fw-bold mb-0">JON</span>
+                </div>
+
+                <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+
+                    <form style="width: 23rem;" asp-controller="Accounts" asp-action="Login" method="post">
+
+                        <h2 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Đăng nhập</h2>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="text" id="username" name="username" class="form-control form-control-lg" />
+                            <label class="form-label" for="usernamr">Tên đăng nhập</label>
+                        </div>
+
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                            <label class="form-label" for="password">Mật khẩu</label>
+                        </div>
+
+                        <div class="pt-1 mb-4">
+                            <button data-mdb-button-init data-mdb-ripple-init style="background-color: #ffd700" class="btn btn-info btn-lg btn-block" type="submit">Đăng nhập</button>
+                        </div>
+
+                        <div class="pt-1 mb-4">
+                            @if (ViewBag.ErrorMessage != null)
+                            {
+                                <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+                            }
+                        </div>
+                    </form>
+                    
+                </div>
+
+            </div>
+            <div class="col-sm-6 px-0 d-none d-sm-block">
+                <img src="~/jon/images/banner.jpg"
+                     alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+            </div>
+        </div>
+    </div>
+</section>
 
