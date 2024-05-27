@@ -505,3 +505,4 @@ C:\Users\FPT\source\repos\BaoCaoCuoiKy\InventoryManagement\InventoryManagement\o
 C:\Users\FPT\source\repos\BaoCaoCuoiKy\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.pdb
 C:\Users\FPT\source\repos\BaoCaoCuoiKy\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.genruntimeconfig.cache
 C:\Users\FPT\source\repos\BaoCaoCuoiKy\InventoryManagement\InventoryManagement\obj\Debug\net8.0\ref\InventoryManagement.dll
+C:\Users\FPT\source\repos\BaoCaoCuoiKy\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\Views\Accounts\Login.cshtml.rz.scp.css

@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "_LoginLayout"; 
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<br />
+<br />
+<form asp-controller="Accounts" asp-action="Login" method="post">
+    <div class="form-group">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" class="form-control" id="username" name="username" required />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+}
+

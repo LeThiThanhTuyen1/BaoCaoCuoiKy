@@ -80,7 +80,7 @@ namespace InventoryManagement.Data
 
             var accounts = new Account[]
             {
-                new Account { Username = "admin", Password = "admin", Role = "Admin", ManagerId = managers[0].ManagerId },
+                new Account { Username = "manager", Password = "manager", Role = "Manager", ManagerId = managers[0].ManagerId },
                 new Account { Username = "manager", Password = "manager", Role = "Manager", ManagerId = managers[1].ManagerId }
             };
             foreach (var account in accounts)

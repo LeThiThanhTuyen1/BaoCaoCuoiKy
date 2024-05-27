@@ -7,16 +7,71 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Models;
 using InventoryManagement.Data;
+using InventoryManagement.Services;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace InventoryManagement.Controllers
 {
     public class AccountsController : Controller
     {
         private readonly InventoryContext _context;
+        private readonly AccountService _accountService;
 
-        public AccountsController(InventoryContext context)
+        public AccountsController(InventoryContext context, AccountService accountService)
         {
             _context = context;
+            _accountService = accountService;
+        }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        [HttpPost]
+        public async Task<IActionResult> Login(string username, string password)
+        {
+            var account = _accountService.Authenticate(username, password);
+            if (account == null)
+            {
+                ViewBag.ErrorMessage = "Invalid username or password";
+                return View();
+            }
+
+            var claims = new List<Claim>
+    {
+            new Claim(ClaimTypes.Name, account.Username),
+            new Claim(ClaimTypes.Role, account.Role)
+    };
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            var authProperties = new AuthenticationProperties
+            {
+                // Thiết lập các thuộc tính xác thực khác nếu cần
+            };
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+
+            // Store user information in session
+            HttpContext.Session.SetString("Username", account.Username);
+            HttpContext.Session.SetString("Role", account.Role);
+
+            // Redirect to Home page after successful login
+            return RedirectToAction("Index", "Home");
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login", "Authentication");
         }
 
         // GET: Accounts
