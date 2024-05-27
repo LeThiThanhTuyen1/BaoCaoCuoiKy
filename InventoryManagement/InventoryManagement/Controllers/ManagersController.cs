@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
 {
@@ -19,6 +20,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Managers
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var inventoryContext = _context.Managers.Include(m => m.Warehouse);
@@ -26,6 +28,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Managers/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,6 +48,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Managers/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID");
@@ -56,6 +60,7 @@ namespace InventoryManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("ManagerId,Name,Address,Contact,WarehouseID")] Manager manager)
         {
             if (ModelState.IsValid)
@@ -69,6 +74,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Managers/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -90,6 +96,7 @@ namespace InventoryManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("ManagerId,Name,Address,Contact,WarehouseID")] Manager manager)
         {
             if (id != manager.ManagerId)
@@ -122,6 +129,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Managers/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -141,6 +149,7 @@ namespace InventoryManagement.Controllers
         }
 
         // POST: Managers/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -154,7 +163,7 @@ namespace InventoryManagement.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        [Authorize(Roles = "Admin")]
         private bool ManagerExists(int id)
         {
             return _context.Managers.Any(e => e.ManagerId == id);

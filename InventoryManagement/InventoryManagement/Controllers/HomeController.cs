@@ -18,6 +18,11 @@ namespace InventoryManagement.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

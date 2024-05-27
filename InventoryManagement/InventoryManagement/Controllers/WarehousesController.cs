@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
 {
@@ -80,6 +81,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Warehouses/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -90,6 +92,7 @@ namespace InventoryManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("WarehouseID,Name,Location")] Warehouse warehouse)
         {
             if (ModelState.IsValid)
@@ -102,6 +105,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Warehouses/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -122,6 +126,7 @@ namespace InventoryManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("WarehouseID,Name,Location")] Warehouse warehouse)
         {
             if (id != warehouse.WarehouseID)
@@ -153,6 +158,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Warehouses/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -173,6 +179,7 @@ namespace InventoryManagement.Controllers
         // POST: Warehouses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var warehouse = await _context.Warehouses.FindAsync(id);
@@ -185,6 +192,7 @@ namespace InventoryManagement.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin")]
         private bool WarehouseExists(int id)
         {
             return _context.Warehouses.Any(e => e.WarehouseID == id);

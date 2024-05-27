@@ -12,6 +12,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
 {
@@ -25,12 +26,15 @@ namespace InventoryManagement.Controllers
             _context = context;
             _accountService = accountService;
         }
+
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
-        [HttpPost]
+
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {
@@ -42,10 +46,10 @@ namespace InventoryManagement.Controllers
             }
 
             var claims = new List<Claim>
-    {
-            new Claim(ClaimTypes.Name, account.Username),
-            new Claim(ClaimTypes.Role, account.Role)
-    };
+            {
+                new Claim(ClaimTypes.Name, account.Username),
+                new Claim(ClaimTypes.Role, account.Role)
+            };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var authProperties = new AuthenticationProperties
@@ -65,22 +69,23 @@ namespace InventoryManagement.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Clear();
-            return RedirectToAction("Login", "Authentication");
+            return RedirectToAction("Login", "Accounts");
         }
 
         // GET: Accounts
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var inventoryContext = _context.Accounts.Include(a => a.Manager);
             return View(await inventoryContext.ToListAsync());
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Accounts/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -100,6 +105,7 @@ namespace InventoryManagement.Controllers
             return View(account);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Accounts/Create
         public IActionResult Create()
         {
@@ -110,6 +116,7 @@ namespace InventoryManagement.Controllers
         // POST: Accounts/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("AccountId,Username,Password,ManagerId")] Account account)
@@ -125,6 +132,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Accounts/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -146,6 +154,7 @@ namespace InventoryManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("AccountId,Username,Password,ManagerId")] Account account)
         {
             if (id != account.AccountId)
@@ -178,6 +187,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Accounts/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -199,6 +209,7 @@ namespace InventoryManagement.Controllers
         // POST: Accounts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var account = await _context.Accounts.FindAsync(id);
@@ -210,7 +221,7 @@ namespace InventoryManagement.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        [Authorize(Roles = "Admin")]
         private bool AccountExists(int id)
         {
             return _context.Accounts.Any(e => e.AccountId == id);

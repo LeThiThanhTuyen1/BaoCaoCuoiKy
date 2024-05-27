@@ -1,6 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Access Denied";
+﻿@* Views/Home/AccessDenied.cshtml *@
+@{
+    ViewBag.Title = "Access Denied";
 }
 
-<h2>Access Denied</h2>
-<p>You do not have permission to view this page.</p>
+<h1>Access Denied</h1>
+<p>You do not have permission to access this resource.</p>
+<a asp-controller="Home" asp-action="Index">Return to Home</a>
