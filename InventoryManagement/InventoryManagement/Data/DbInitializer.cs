@@ -69,8 +69,146 @@ namespace InventoryManagement.Data
 
             var managers = new Manager[]
             {
-                new Manager { Name = "Nguyễn Văn An", Address = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn", Contact = "0868425266", WarehouseID = warehouses[0].WarehouseID },
-                new Manager { Name = "Manager B", Address = "Address for Manager B", Contact = "Contact for Manager B", WarehouseID = warehouses[1].WarehouseID }
+                new Manager
+                {
+                    Name = "Nguyễn Văn An",
+                    Address = "An Dương Vương, Nguyễn Văn Cừ, Quy Nhơn",
+                    Contact = "0868425266",
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Trần Thị Hoa",
+                    Address = "123 Lý Thường Kiệt, Hà Nội",
+                    Contact = "0987654321",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Phạm Văn Tùng",
+                    Address = "789 Trần Hưng Đạo, Đà Nẵng",
+                    Contact = "0905678901",
+                    WarehouseID = warehouses[2].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Lê Thị Lan",
+                    Address = "456 Nguyễn Huệ, Thành phố Hồ Chí Minh",
+                    Contact = "0903456789",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Nguyễn Đức Anh",
+                    Address = "234 Lê Lợi, Huế",
+                    Contact = "0912345678",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Trần Minh Ngọc",
+                    Address = "567 Hàng Bông, Hà Nội",
+                    Contact = "0989876543",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Phạm Thị Hải",
+                    Address = "890 Lê Duẩn, Đà Nẵng",
+                    Contact = "0901234567",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Võ Văn Minh",
+                    Address = "111 Phan Đình Phùng, Thành phố Hồ Chí Minh",
+                    Contact = "0909876543",
+                    WarehouseID = warehouses[2].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Nguyễn Thị Hương",
+                    Address = "222 Nguyễn Thái Học, Vinh",
+                    Contact = "0908765432",
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Lê Văn Đức",
+                    Address = "333 Trần Phú, Nha Trang",
+                    Contact = "0907654321",
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Trần Thị Lan Anh",
+                    Address = "444 Hoàng Diệu, Hải Phòng",
+                    Contact = "0906543210",
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Phạm Quốc Tuấn",
+                    Address = "555 Nguyễn Chí Thanh, Đà Lạt",
+                    Contact = "0905432109",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Nguyễn Thị Hải Yến",
+                    Address = "666 Ngô Quyền, Hạ Long",
+                    Contact = "0904321098",
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Lê Hoàng Anh",
+                    Address = "777 Lê Lợi, Vũng Tàu",
+                    Contact = "0903210987",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Trần Văn Phương",
+                    Address = "888 Trường Chinh, Cần Thơ",
+                    Contact = "0902109876",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Phạm Thị Lan Anh",
+                    Address = "999 Lê Hồng Phong, Rạch Giá",
+                    Contact = "0901098765",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Nguyễn Văn Minh",
+                    Address = "101 Nguyễn Tất Thành, Hải Dương",
+                    Contact = "0900987654",
+                    WarehouseID = warehouses[1].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Lê Thị Thanh Huyền",
+                    Address = "202 Hùng Vương, Thái Nguyên",
+                    Contact = "0899876543",
+                    WarehouseID = warehouses[2].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Trần Quang Huy",
+                    Address = "303 Lý Thường Kiệt, Buôn Ma Thuột",
+                    Contact = "0898765432",
+                    WarehouseID = warehouses[0].WarehouseID
+                },
+                new Manager
+                {
+                    Name = "Phạm Thanh Bình",
+                    Address = "404 Nguyễn Trãi, Bạc Liêu",
+                    Contact = "0897654321",
+                    WarehouseID = warehouses[1].WarehouseID
+                }
             };
             foreach (var manager in managers)
             {
@@ -80,8 +218,146 @@ namespace InventoryManagement.Data
 
             var accounts = new Account[]
             {
-                new Account { Username = "manager", Password = "manager", Role = "Manager", ManagerId = managers[0].ManagerId },
-                new Account { Username = "manager", Password = "manager", Role = "Manager", ManagerId = managers[1].ManagerId }
+                new Account
+                {
+                    Username = "admin",
+                    Password = "admin",
+                    Role = "Admin",
+                    ManagerId = managers[0].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager2",
+                    Password = "manager2",
+                    Role = "Manager",
+                    ManagerId = managers[1].ManagerId
+                },
+                new Account
+                {
+                    Username = "admin",
+                    Password = "admin",
+                    Role = "Admin",
+                    ManagerId = managers[2].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager3",
+                    Password = "manager3",
+                    Role = "Manager",
+                    ManagerId = managers[3].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager4",
+                    Password = "manager4",
+                    Role = "Manager",
+                    ManagerId = managers[4].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager5",
+                    Password = "manager5",
+                    Role = "Manager",
+                    ManagerId = managers[5].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager6",
+                    Password = "manager6",
+                    Role = "Manager",
+                    ManagerId = managers[6].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager7",
+                    Password = "manager7",
+                    Role = "Manager",
+                    ManagerId = managers[7].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager8",
+                    Password = "manager8",
+                    Role = "Manager",
+                    ManagerId = managers[8].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager9",
+                    Password = "manager9",
+                    Role = "Manager",
+                    ManagerId = managers[9].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager10",
+                    Password = "manager10",
+                    Role = "Manager",
+                    ManagerId = managers[10].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager11",
+                    Password = "manager11",
+                    Role = "Manager",
+                    ManagerId = managers[11].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager12",
+                    Password = "manager12",
+                    Role = "Manager",
+                    ManagerId = managers[12].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager13",
+                    Password = "manager13",
+                    Role = "Manager",
+                    ManagerId = managers[13].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager14",
+                    Password = "manager14",
+                    Role = "Manager",
+                    ManagerId = managers[14].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager15",
+                    Password = "manager15",
+                    Role = "Manager",
+                    ManagerId = managers[15].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager16",
+                    Password = "manager16",
+                    Role = "Manager",
+                    ManagerId = managers[16].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager17",
+                    Password = "manager17",
+                    Role = "Manager",
+                    ManagerId = managers[17].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager18",
+                    Password = "manager18",
+                    Role = "Manager",
+                    ManagerId = managers[18].ManagerId
+                },
+                new Account
+                {
+                    Username = "manager19",
+                    Password = "manager19",
+                    Role = "Manager",
+                    ManagerId = managers[19].ManagerId
+                }
             };
             foreach (var account in accounts)
             {
