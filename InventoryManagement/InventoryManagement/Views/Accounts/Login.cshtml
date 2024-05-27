@@ -3,11 +3,11 @@
     ViewBag.Title = "Login";
 }
 
- <head>
-    <link href="~/css/style.css" rel="stylesheet" />
+<head>
+    <link href="~/css/style_login.css" rel="stylesheet" />
  </head>
 
-<section class="vh-100">
+@* <section class="vh-100">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6 text-black">
@@ -55,4 +55,31 @@
         </div>
     </div>
 </section>
+ *@
+<body>
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">ĐĂNG NHẬP</h1>
+                <form asp-controller="Accounts" asp-action="Login" method="post">
+                    <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" />
+                    <input type="password" id="password" name="password" placeholder="Nhập mật khâut" />
+                    <button class="opacity">Đăng nhập</button>
+                    <div class="pt-1 mb-4">
+                        @if (ViewBag.ErrorMessage != null)
+                        {
+                            <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+                        }
+                    </div>
+                </form>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+       
+    </section>
+</body>
 
+<script src="~/js/script.js"></script>

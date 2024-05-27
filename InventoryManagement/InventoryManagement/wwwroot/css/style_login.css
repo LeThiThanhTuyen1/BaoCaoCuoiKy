@@ -1,128 +1,3 @@
-﻿/* Body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fffbe6; /* Màu nền nhạt */
-}
-
-/* Headers */
-h1 {
-    color: #d4af37; /* Màu vàng đậm */
-    margin-top: 20px; /* Khoảng cách giữa tiêu đề và header */
-}
-
-h3 {
-    color: #dc3545; /* Màu đỏ đậm */
-}
-
-/* Buttons */
-.btn {
-    background-color: #ffd700; /* Màu vàng */
-    color: black;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #ffeb3b; /* Màu vàng nhạt hơn khi hover */
-}
-
-.btn-danger {
-    background-color: #dc3545!important; /* Màu đỏ cho nút delete */
-    color: white;
-}
-
-.btn-danger:hover {
-    background-color: #ff5252; /* Màu đỏ nhạt hơn khi hover */
-}
-
-/* Form */
-/* Điều chỉnh độ rộng của form */
-.form-actions.no-color p {
-    margin-bottom: 0; /* Loại bỏ khoảng cách dưới cùng */
-}
-
-/* Điều chỉnh style của input trong form */
-.form-actions.no-color input[type="text"] {
-    width: 400px !important; /* Độ rộng input sẽ giảm đi để tạo chỗ cho nút "Tìm" */
-    color: #6c757d; /* Màu chữ của input */
-}
-
-/* Điều chỉnh style của nút "Tìm" */
-.form-actions.no-color input[type="submit"] {
-    margin-left: 10px; /* Tạo khoảng cách giữa input và nút "Tìm" */
-}
-
-.form-group {
-    margin-bottom: 20px; /* Khoảng cách giữa các trường trong form */
-}
-
-.col-sm-2 {
-    color: #d4af37; /* Màu chữ của nhãn */
-    font-weight: bold; /* Đậm */
-}
-
-label {
-    color: #d4af37; /* Màu chữ của nhãn */
-    font-weight: bold; /* Đậm */
-}
-
-input[type="text"] {
-    width: 100%; /* Độ rộng của input */
-    padding: 10px; /* Kích thước padding */
-    border: 1px solid #ccc; /* Viền */
-    border-radius: 4px; /* Bo góc */
-    box-sizing: border-box; /* Sắp xếp kích thước */
-    color: #6c757d; /* Màu chữ của input */
-}
-
-input[type="submit"] {
-    background-color: #ffd700; /* Màu nền của nút */
-    color: black; /* Màu chữ */
-    border: none; /* Không có viền */
-    padding: 10px 20px; /* Kích thước */
-    cursor: pointer; /* Con trỏ chỉ vào */
-    border-radius: 4px; /* Bo góc */
-}
-
-input[type="submit"]:hover {
-    background-color: #ffeb3b; /* Màu nền nhạt hơn khi hover */
-}
-
-/* Text */
-.text-danger {
-    color: red; /* Màu chữ khi có lỗi */
-}
-
-/* Table */
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px; /* Khoảng cách giữa form và table */
-}
-
-.table th {
-    background-color: #ffd700; /* Màu nền của tiêu đề bảng */
-    color: black;
-    border: 1px solid #d4af37;
-    padding: 8px;
-    text-align: left;
-}
-
-.table td {
-    border: 1px solid #d4af37;
-    padding: 8px;
-}
-
-/* Pagination */
-.pagination {
-    margin-top: 20px;
-}
-
-.pagination .btn-default.disabled {
-    background-color: #f0e68c; /* Màu vàng nhạt cho nút disabled */
-    cursor: not-allowed;
-}
-
-/*login*/
 :root {
     --background: #1a1a2e;
     --color: #ffffff;
@@ -171,7 +46,6 @@ h1 {
     position: relative;
     width: 22.2rem;
 }
-
 .form-container {
     border: 1px solid hsla(0, 0%, 65%, 0.158);
     box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
@@ -205,11 +79,11 @@ h1 {
     -o-border-radius: 5px;
 }
 
-    .login-container form input:focus {
-        box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
-        animation: wobble 0.3s ease-in;
-        -webkit-animation: wobble 0.3s ease-in;
-    }
+.login-container form input:focus {
+    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+    animation: wobble 0.3s ease-in;
+    -webkit-animation: wobble 0.3s ease-in;
+}
 
 .login-container form button {
     background-color: var(--primary-color);
@@ -236,14 +110,14 @@ h1 {
     -o-transition: all 0.1s ease-in-out;
 }
 
-    .login-container form button:hover {
-        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
-        transform: scale(1.02);
-        -webkit-transform: scale(1.02);
-        -moz-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        -o-transform: scale(1.02);
-    }
+.login-container form button:hover {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
 
 .circle {
     width: 8rem;
@@ -291,7 +165,6 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-
 .opacity {
     opacity: 0.6;
 }
@@ -307,9 +180,9 @@ h1 {
     transition: all 0.3s ease-in;
 }
 
-    .theme-btn:hover {
-        width: 40px !important;
-    }
+.theme-btn:hover {
+    width: 40px !important;
+}
 
 @keyframes wobble {
     0% {
@@ -319,7 +192,6 @@ h1 {
         -ms-transform: scale(1.025);
         -o-transform: scale(1.025);
     }
-
     25% {
         transform: scale(1);
         -webkit-transform: scale(1);
@@ -327,7 +199,6 @@ h1 {
         -ms-transform: scale(1);
         -o-transform: scale(1);
     }
-
     75% {
         transform: scale(1.025);
         -webkit-transform: scale(1.025);
@@ -335,7 +206,6 @@ h1 {
         -ms-transform: scale(1.025);
         -o-transform: scale(1.025);
     }
-
     100% {
         transform: scale(1);
         -webkit-transform: scale(1);
