@@ -1,5 +1,6 @@
 ﻿@model PaginatedList<InventoryManagement.Models.Warehouse>
-
+@using Microsoft.AspNetCore.Http
+@using System.Security.Claims
 @{
     ViewData["Title"] = "Kho hàng";
 }
@@ -30,9 +31,16 @@
             <th>
                 Vị trí
             </th>
-            <th>
-                Thao tác
-            </th>
+            @{
+                var user = User.Identity;
+                var role = user.IsAuthenticated ? User.FindFirst(ClaimTypes.Role)?.Value : null;
+            }
+            @if (role == "Admin")
+            {
+                <th>
+                    Thao tác
+                </th>
+            }
         </tr>
     </thead>
     <tbody>
@@ -44,11 +52,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Location)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.WarehouseID">Sửa</a> |
-                <a asp-action="Details" asp-route-id="@item.WarehouseID">Chi tiết</a> |
-                <a asp-action="Delete" asp-route-id="@item.WarehouseID">Xóa</a>
-            </td>
+            @if (role == "Admin")
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.WarehouseID">Sửa</a> |
+                        <a asp-action="Details" asp-route-id="@item.WarehouseID">Chi tiết</a> |
+                        <a asp-action="Delete" asp-route-id="@item.WarehouseID">Xóa</a>
+                    </td>
+                }
         </tr>
 }
     </tbody>
