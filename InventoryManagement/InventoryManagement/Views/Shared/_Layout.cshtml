@@ -32,6 +32,24 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main-layout {
+            flex: 1;
+        }
+        .custom-container {
+            flex: 1;
+        }
+        footer {
+            padding: 1rem 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <!-- body -->
 <body class="main-layout">
@@ -113,10 +131,7 @@
             @RenderBody()
         </main> 
     </div>
-    <footer 
-       @*  style="padding: 1rem 0!important; position: absolute!important;
-        bottom: 0!important; width: 100%;"  *@
-        class="border-top footer text-muted">
+    <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - Quản lý kho hàng - <a asp-area="" asp-controller="Home" asp-action=""></a>
         </div>
@@ -131,4 +146,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
