@@ -21,10 +21,44 @@ namespace InventoryManagement.Controllers
 
         // GET: Managers
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(
+    string sortOrder,
+    string currentFilter,
+    string searchString,
+    int? pageNumber)
         {
-            var inventoryContext = _context.Managers.Include(m => m.Warehouse);
-            return View(await inventoryContext.ToListAsync());
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var inventoryContext = _context.Managers.Include(m => m.Warehouse).AsQueryable(); ;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                inventoryContext = inventoryContext.Where(s => s.Name.Contains(searchString)
+                                               || s.Address.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    inventoryContext = inventoryContext.OrderByDescending(s => s.Name);
+                    break;
+                default:
+                    inventoryContext = inventoryContext.OrderBy(s => s.Name);
+                    break;
+            }
+
+            int pageSize = 5;
+            return View(await PaginatedList<Manager>.CreateAsync(inventoryContext.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Managers/Details/5

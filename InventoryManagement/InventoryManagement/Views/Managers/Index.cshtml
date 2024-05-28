@@ -1,4 +1,4 @@
-﻿@model IEnumerable<InventoryManagement.Models.Manager>
+﻿@model PaginatedList<InventoryManagement.Models.Manager>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,50 +6,83 @@
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Index</h1>
+<h1>Danh sách quản lý</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Tạo mới</a>
 </p>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Tìm kiếm quản lý: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên quản lý hoặc địa chỉ" />
+            <input type="submit" value="Tìm" class="btn btn-default" /> |
+            <a asp-action="Index">Trở về danh sách đầy đủ</a>
+        </p>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Tên</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Address)
+                Địa chỉ
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Contact)
+                Liên hệ
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Warehouse)
+                Kho
             </th>
-            <th></th>
+            <th>
+                Thao tác
+            </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contact)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Warehouse.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ManagerId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ManagerId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ManagerId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Warehouse.Name)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ManagerId">Sửa</a> |
+                    <a asp-action="Details" asp-route-id="@item.ManagerId">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ManagerId">Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @prevDisabled">
+    Trước
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @nextDisabled">
+    Tiếp
+</a>
