@@ -3,9 +3,10 @@
     "",
     "\\InventoryManagement",
     "\\InventoryManagement\\InventoryManagement",
+    "\\InventoryManagement\\InventoryManagement\\Controllers",
     "\\InventoryManagement\\InventoryManagement\\Views",
     "\\InventoryManagement\\InventoryManagement\\Views\\Warehouses"
   ],
-  "SelectedNode": "\\InventoryManagement\\InventoryManagement\\Views\\Warehouses\\Create.cshtml",
+  "SelectedNode": "\\InventoryManagement\\InventoryManagement\\Controllers\\AccountsController.cs",
   "PreviewInSolutionExplorer": false
 }
