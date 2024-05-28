@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Models;
 using Microsoft.AspNetCore.Authorization;
+using InventoryManagement.Data;
 
 namespace InventoryManagement.Controllers
 {
@@ -29,8 +30,8 @@ namespace InventoryManagement.Controllers
             ViewData["CurrentSort"] = sortOrder;
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewData["CurrentFilter"] = searchString;
-
-            if (searchString != null )
+            
+            if (searchString != null)
             {
                 pageNumber = 1;
             }
@@ -40,7 +41,7 @@ namespace InventoryManagement.Controllers
             }
 
             var warehouses = from s in _context.Warehouses
-                           select s;
+                             select s;
 
             if (!String.IsNullOrEmpty(searchString))
             {
@@ -63,6 +64,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Warehouses/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

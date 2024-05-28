@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using InventoryManagement.Models;
 using Microsoft.EntityFrameworkCore;
+using InventoryManagement.Data;
 
 namespace InventoryManagement.Services
 {

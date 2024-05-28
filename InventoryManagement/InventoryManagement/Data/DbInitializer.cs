@@ -530,4 +530,3 @@ namespace InventoryManagement.Data
         }
     }
 }
-

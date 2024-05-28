@@ -11,7 +11,6 @@ using InventoryManagement.Services;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
-using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
@@ -96,6 +95,7 @@ namespace InventoryManagement.Controllers
 
             var account = await _context.Accounts
                 .Include(a => a.Manager)
+                .ThenInclude( e => e.Warehouse)
                 .FirstOrDefaultAsync(m => m.AccountId == id);
             if (account == null)
             {
@@ -119,7 +119,7 @@ namespace InventoryManagement.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AccountId,Username,Password,ManagerId")] Account account)
+        public async Task<IActionResult> Create([Bind("AccountId,Username,Password,ManagerId, Role")] Account account)
         {
             if (ModelState.IsValid)
             {
@@ -133,6 +133,7 @@ namespace InventoryManagement.Controllers
 
         // GET: Accounts/Edit/5
         [Authorize(Roles = "Admin")]
+        // GET: Accounts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -145,7 +146,7 @@ namespace InventoryManagement.Controllers
             {
                 return NotFound();
             }
-            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Name", account.ManagerId);
+            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Address", account.ManagerId);
             return View(account);
         }
 
@@ -153,9 +154,9 @@ namespace InventoryManagement.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("AccountId,Username,Password,ManagerId")] Account account)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("AccountId,Username,Password,ManagerId,Role")] Account account)
         {
             if (id != account.AccountId)
             {
@@ -182,7 +183,7 @@ namespace InventoryManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Name", account.ManagerId);
+            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Address", account.ManagerId);
             return View(account);
         }
 
@@ -221,7 +222,6 @@ namespace InventoryManagement.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        [Authorize(Roles = "Admin")]
         private bool AccountExists(int id)
         {
             return _context.Accounts.Any(e => e.AccountId == id);

@@ -15,5 +15,8 @@ namespace InventoryManagement.Models
         [MaxLength(200, ErrorMessage = "Vị trí không được vượt quá 200 ký tự.")]
         [Display(Name = "Vị trí")]
         public string? Location { get; set; }
+       
+        public ICollection<Product>? Products { get; set; }
+        public ICollection<Manager>? Managers { get; set; }
     }
 }

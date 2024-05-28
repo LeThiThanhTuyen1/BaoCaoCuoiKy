@@ -15,13 +15,14 @@
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
         <p>
-            Tìm kiếm  
+            Tìm kiếm
             <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên kho hay địa chỉ" />
             <input type="submit" value="Tìm" class="btn btn-default" /> |
             <a asp-action="Index">Trở về danh sách đầy đủ</a>
         </p>
     </div>
 </form>
+
 <table class="table">
     <thead>
         <tr>
@@ -44,15 +45,16 @@
         </tr>
     </thead>
     <tbody>
+
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            @if (role == "Admin")
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                @if (role == "Admin")
                 {
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.WarehouseID">Sửa</a> |
@@ -60,7 +62,7 @@
                         <a asp-action="Delete" asp-route-id="@item.WarehouseID">Xóa</a>
                     </td>
                 }
-        </tr>
+            </tr>
 }
     </tbody>
 </table>

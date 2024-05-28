@@ -28,5 +28,8 @@ namespace InventoryManagement.Models
         public int WarehouseID { get; set; }
         [Display(Name = "Kho")]
         public Warehouse? Warehouse { get; set; }
+        public ICollection<Account>? Account { get; set; }
+
+
     }
 }

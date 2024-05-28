@@ -12,6 +12,8 @@ namespace InventoryManagement.Models
         public string? Address { get; set; }
 
         public string? Contact { get; set; }
+        public ICollection<Product>? Products { get; set; }
+
     }
 }
 
