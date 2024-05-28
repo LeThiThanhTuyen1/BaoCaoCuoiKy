@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uCAngmNJUG7K6G2wuWnLQau/XNbvxza0lg8s8ivmbyU=",
+  "Hash": "WMwZT95OzTNAycFiq0/OQGjEKiDlisw0a1ZM5NzJAEE=",
   "Source": "InventoryManagement",
   "BasePath": "_content/InventoryManagement",
   "Mode": "Default",
@@ -1138,12 +1138,12 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style_login.css",
+      "Identity": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style-login.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
-      "RelativePath": "jon/css/style_login.css",
+      "RelativePath": "jon/css/style-login.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1154,7 +1154,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\jon\\css\\style_login.css"
+      "OriginalItemSpec": "wwwroot\\jon\\css\\style-login.css"
     },
     {
       "Identity": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\FontAwesome.otf",
