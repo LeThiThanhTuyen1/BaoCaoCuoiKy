@@ -189,10 +189,6 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\style_login.css",
-      "PackagePath": "staticwebassets\\css\\style_login.css"
-    },
-    {
       "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -235,6 +231,10 @@
     {
       "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style.css",
       "PackagePath": "staticwebassets\\jon\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style_login.css",
+      "PackagePath": "staticwebassets\\jon\\css\\style_login.css"
     },
     {
       "Id": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\FontAwesome.otf",

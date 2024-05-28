@@ -17,151 +17,151 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InventoryManagement
 build_property.RootNamespace = InventoryManagement
-build_property.ProjectDir = C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\
+build_property.ProjectDir = C:\Users\FPT\source\repos\BaoCaoCuoiKy\InventoryManagement\InventoryManagement\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement
+build_property.MSBuildProjectDirectory = C:\Users\FPT\source\repos\BaoCaoCuoiKy\InventoryManagement\InventoryManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Accounts/Create.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Accounts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Accounts/Delete.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Accounts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Accounts/Details.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Accounts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Accounts/Edit.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Accounts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Accounts/Index.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Accounts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Home/AccessDenied.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Home/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Home/Index.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Home/Privacy.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Managers/Create.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Managers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Managers/Delete.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Managers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Managers/Details.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Managers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Managers/Edit.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Managers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Managers/Index.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Managers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Products/Create.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Products/Delete.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Products/Details.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Products/Edit.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Products/Index.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Shared/Error.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Shared/_LoginLayout.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Suppliers/Create.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Suppliers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Suppliers/Delete.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Suppliers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Suppliers/Details.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Suppliers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Suppliers/Edit.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Suppliers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Suppliers/Index.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Suppliers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Warehouses/Create.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Warehouses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Warehouses/Delete.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Warehouses/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Warehouses/Details.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Warehouses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Warehouses/Edit.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Warehouses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Warehouses/Index.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Warehouses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FyZWhvdXNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/_ViewImports.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/_ViewStart.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Accounts/Login.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Accounts/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-odl0tbm0ez
 
-[C:/Users/hp/Desktop/New folder/InventoryManagement/InventoryManagement/Views/Shared/_Layout.cshtml]
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-c4618qd80j
