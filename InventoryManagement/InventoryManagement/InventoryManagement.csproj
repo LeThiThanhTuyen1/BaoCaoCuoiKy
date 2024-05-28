@@ -27,4 +27,11 @@
     <Folder Include="wwwroot\jon\icon\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Accounts\Login.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
