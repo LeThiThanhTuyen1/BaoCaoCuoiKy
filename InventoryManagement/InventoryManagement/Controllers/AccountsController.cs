@@ -78,11 +78,65 @@ namespace InventoryManagement.Controllers
 
         // GET: Accounts
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, string roleFilter, string currentRoleFilter, int? pageNumber)
         {
-            var inventoryContext = _context.Accounts.Include(a => a.Manager);
-            return View(await inventoryContext.ToListAsync());
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["UsernameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "username_desc" : "";
+            ViewData["PasswordSortParm"] = sortOrder == "password" ? "password_desc" : "password";
+            ViewData["ManagerSortParm"] = sortOrder == "manager" ? "manager_desc" : "manager";
+            ViewData["RoleSortParm"] = sortOrder == "role" ? "role_desc" : "role";
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["CurrentRoleFilter"] = roleFilter;
+
+            if (searchString != null || roleFilter != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+                roleFilter = currentRoleFilter;
+            }
+
+            var accounts = from a in _context.Accounts.Include(a => a.Manager)
+                           select a;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                accounts = accounts.Where(a => a.Username.Contains(searchString));
+            }
+
+            if (!String.IsNullOrEmpty(roleFilter))
+            {
+                accounts = accounts.Where(a => a.Role == roleFilter);
+            }
+
+            switch (sortOrder)
+            {
+                case "username_desc":
+                    accounts = accounts.OrderByDescending(a => a.Username);
+                    break;
+                case "password_desc":
+                    accounts = accounts.OrderByDescending(a => a.Password);
+                    break;
+                case "manager_desc":
+                    accounts = accounts.OrderByDescending(a => a.Manager.Name);
+                    break;
+                case "role":
+                    accounts = accounts.OrderBy(a => a.Role);
+                    break;
+                case "role_desc":
+                    accounts = accounts.OrderByDescending(a => a.Role);
+                    break;
+                default:
+                    accounts = accounts.OrderBy(a => a.Username);
+                    break;
+            }
+
+            int pageSize = 8;
+            return View(await PaginatedList<Account>.CreateAsync(accounts.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
+
 
         [Authorize(Roles = "Admin")]
         // GET: Accounts/Details/5
@@ -95,7 +149,6 @@ namespace InventoryManagement.Controllers
 
             var account = await _context.Accounts
                 .Include(a => a.Manager)
-                .ThenInclude( e => e.Warehouse)
                 .FirstOrDefaultAsync(m => m.AccountId == id);
             if (account == null)
             {
@@ -105,11 +158,13 @@ namespace InventoryManagement.Controllers
             return View(account);
         }
 
+
         [Authorize(Roles = "Admin")]
         // GET: Accounts/Create
         public IActionResult Create()
         {
             ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Name");
+            ViewData["Role"] = new SelectList(_context.Accounts.Select(a => a.Role).Distinct().ToList());
             return View();
         }
 
@@ -119,7 +174,7 @@ namespace InventoryManagement.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AccountId,Username,Password,ManagerId, Role")] Account account)
+        public async Task<IActionResult> Create([Bind("AccountId,Username,Password,ManagerId,Role")] Account account)
         {
             if (ModelState.IsValid)
             {
@@ -146,15 +201,16 @@ namespace InventoryManagement.Controllers
             {
                 return NotFound();
             }
-            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Address", account.ManagerId);
+            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Name", account.ManagerId);
+            ViewData["Role"] = new SelectList(_context.Accounts.Select(a => a.Role).Distinct().ToList(), account.Role);
             return View(account);
         }
 
         // POST: Accounts/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
         [Authorize(Roles = "Admin")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("AccountId,Username,Password,ManagerId,Role")] Account account)
         {
@@ -183,10 +239,9 @@ namespace InventoryManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Address", account.ManagerId);
+            ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Name", account.ManagerId);
             return View(account);
         }
-
         // GET: Accounts/Delete/5
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
@@ -211,6 +266,7 @@ namespace InventoryManagement.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
+       
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var account = await _context.Accounts.FindAsync(id);
@@ -222,6 +278,7 @@ namespace InventoryManagement.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
         private bool AccountExists(int id)
         {
             return _context.Accounts.Any(e => e.AccountId == id);

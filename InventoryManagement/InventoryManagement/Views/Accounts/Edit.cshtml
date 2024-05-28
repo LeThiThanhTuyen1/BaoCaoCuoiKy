@@ -6,9 +6,9 @@
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Edit</h1>
+<h1>Sửa Tài Khoản</h1>
 
-<h4>Account</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -16,36 +16,38 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="AccountId" />
             <div class="form-group">
-                <label asp-for="Username" class="control-label"></label>
+                <label asp-for="Username" class="control-label"> Tên Tài Khoản</label>
                 <input asp-for="Username" class="form-control" />
                 <span asp-validation-for="Username" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
+                <label asp-for="Password" class="control-label"> Mật Khẩu</label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ManagerId" class="control-label"></label>
+                <label asp-for="ManagerId" class="control-label"> Quản Lý</label>
                 <select asp-for="ManagerId" class="form-control" asp-items="ViewBag.ManagerId"></select>
                 <span asp-validation-for="ManagerId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Role" class="control-label"></label>
+                <label asp-for="Role" class="control-label"> Vai Trò </label>
                 <select asp-for="Role" class="form-control" asp-items="ViewBag.Role"></select>
                 <span asp-validation-for="Role" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Lưu" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Quay Trở Về Danh Sách</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

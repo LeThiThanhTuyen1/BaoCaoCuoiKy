@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Account>
+﻿@model PaginatedList<InventoryManagement.Models.Account>
 
 @{
     ViewData["Title"] = "Index";
@@ -6,50 +6,83 @@
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Index</h1>
+<h1>Danh sách tài khoản</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Tạo mới</a>
 </p>
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Tìm kiếm tài khoản <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên tài khoản" />
+            Vai trò:
+            @Html.DropDownList("roleFilter", new SelectList(new[]
+                     {
+            new { Value = "", Text = "Tất cả" },
+            new { Value = "Admin", Text = "Admin" },
+            new { Value = "Manager", Text = "Manager" }
+            }, "Value", "Text", ViewData["CurrentRoleFilter"] as string), new { @class = "form-control" })
+
+            <input type="submit" value="Tìm kiếm" class="btn btn-default" /> |
+            <a asp-action="Index">Quay lại danh sách đầy đủ</a>
+        </p>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Username)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["UsernameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Tên Tài Khoản</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
+                <a>Mật Khẩu</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Manager)
+                <a>Quản Lý</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Role)
+                <a>Vai Trò</a>
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Manager.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Role)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.AccountId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AccountId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AccountId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Username)</td>
+                <td>@Html.DisplayFor(modelItem => item.Password)</td>
+                <td>@Html.DisplayFor(modelItem => item.Manager.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Role)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.AccountId">Sửa</a> |
+                    <a asp-action="Details" asp-route-id="@item.AccountId">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.AccountId">Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   asp-route-roleFilter="@ViewData["CurrentRoleFilter"]"
+   class="btn btn-default @prevDisabled">
+    Trước
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   asp-route-roleFilter="@ViewData["CurrentRoleFilter"]"
+   class="btn btn-default @nextDisabled">
+    Tiếp
+</a>
