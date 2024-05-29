@@ -6,7 +6,7 @@
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Danh sách quản lý</h1>
+<h1>Danh sách người quản lý</h1>
 
 <p>
     <a asp-action="Create">Tạo mới</a>
@@ -79,7 +79,7 @@
    asp-route-currentFilter="@ViewData["CurrentFilter"]"
    asp-route-warehouseFilter="@ViewData["WarehouseFilter"]"
    class="btn btn-default @prevDisabled">
-    Previous
+    Trước
 </a>
 
 <a asp-action="Index"
@@ -88,5 +88,5 @@
    asp-route-currentFilter="@ViewData["CurrentFilter"]"
    asp-route-warehouseFilter="@ViewData["WarehouseFilter"]"
    class="btn btn-default @nextDisabled">
-    Next
+    Sau
 </a>

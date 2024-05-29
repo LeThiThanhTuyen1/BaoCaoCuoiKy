@@ -105,7 +105,7 @@ namespace InventoryManagement.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID");
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name");
             return View();
         }
 
@@ -123,7 +123,7 @@ namespace InventoryManagement.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", manager.WarehouseID);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", manager.WarehouseID);
             return View(manager);
         }
 
@@ -141,7 +141,7 @@ namespace InventoryManagement.Controllers
             {
                 return NotFound();
             }
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", manager.WarehouseID);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", manager.WarehouseID);
             return View(manager);
         }
 
@@ -178,7 +178,7 @@ namespace InventoryManagement.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", manager.WarehouseID);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", manager.WarehouseID);
             return View(manager);
         }
 
