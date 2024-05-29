@@ -750,7 +750,6 @@ C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug
 C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InventoryManagement.props
 C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InventoryManagement.props
 C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\Views\Accounts\Login.cshtml.rz.scp.css
 C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\bundle\InventoryManagement.styles.css
 C:\Users\hp\Desktop\New folder\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\projectbundle\InventoryManagement.bundle.scp.css

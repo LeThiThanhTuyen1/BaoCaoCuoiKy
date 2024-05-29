@@ -22,10 +22,11 @@ namespace InventoryManagement.Controllers
         // GET: Managers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index(
-    string sortOrder,
-    string currentFilter,
-    string searchString,
-    int? pageNumber)
+            string sortOrder,
+            string currentFilter,
+            string searchString,
+            int? pageNumber,
+            int? warehouseFilter)
         {
             ViewData["CurrentSort"] = sortOrder;
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
@@ -39,13 +40,32 @@ namespace InventoryManagement.Controllers
                 searchString = currentFilter;
             }
 
-            var inventoryContext = _context.Managers.Include(m => m.Warehouse).AsQueryable(); ;
+            var inventoryContext = _context.Managers.Include(m => m.Warehouse).AsQueryable();
+
 
             if (!String.IsNullOrEmpty(searchString))
             {
                 inventoryContext = inventoryContext.Where(s => s.Name.Contains(searchString)
                                                || s.Address.Contains(searchString));
             }
+
+            if (warehouseFilter.HasValue && warehouseFilter.Value != 0)
+            {
+                inventoryContext = inventoryContext.Where(m => m.WarehouseID == warehouseFilter.Value);
+            }
+            var warehouses = await _context.Warehouses.ToListAsync();
+            SelectList warehouseSelectList;
+            if (warehouses != null && warehouses.Any())
+            {
+                warehouseSelectList = new SelectList(warehouses, "WarehouseID", "Name");
+            }
+            else
+            {
+                warehouseSelectList = new SelectList(new List<Warehouse>(), "WarehouseID", "Name");
+            }
+
+            ViewData["WarehouseList"] = warehouseSelectList;
+            ViewData["WarehouseFilter"] = warehouseFilter;
 
             switch (sortOrder)
             {
