@@ -19,10 +19,62 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(
+            string searchString, 
+            string sortOrder, 
+            string currentFilter, 
+            int? pageNumber)
         {
-            var inventoryContext = _context.Products.Include(p => p.Supplier).Include(p => p.Warehouse);
-            return View(await inventoryContext.ToListAsync());
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["DateSortParm"] = String.IsNullOrEmpty(sortOrder) ? "date_desc" : "";
+            ViewData["SupplierSortParm"] = String.IsNullOrEmpty(sortOrder) ? "supplier_desc" : "";
+            ViewData["CurrentSort"] = sortOrder;
+
+            var products = from p in _context.Products
+                            .Include(p => p.Supplier)
+                            .Include(p => p.Warehouse)
+                           select p;
+            products = products.Where(p => p.Quantity > 0);
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Name.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    products = products.OrderByDescending(s => s.Name);
+                    break;
+                case "EntryDate":
+                    products = products.OrderBy(s => s.EntryDate);
+                    break;
+                case "date_desc":
+                    products = products.OrderByDescending(s => s.EntryDate);
+                    break;
+                case "Supplier":
+                    products = products.OrderBy(s => s.Supplier.Name);
+                    break;
+                case "supplier_desc":
+                    products = products.OrderByDescending(s => s.Supplier.Name);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.Name);
+                    break;
+            }
+
+            int pageSize = 5;
+            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Products/Details/5
@@ -45,12 +97,30 @@ namespace InventoryManagement.Controllers
             return View(product);
         }
 
+        // Phương thức kiểm tra sản phẩm tồn tại
+        private async Task<Product> FindProductByNameAsync(string name)
+        {
+            return await _context.Products.FirstOrDefaultAsync(p => p.Name == name);
+        }
+
+        // Hỗ trợ kiểm tra nha cung cấp
+        // Hỗ trợ kiểm tra nhà cung cấp
+        private async Task<Product> FindProductByNameAndSupplierAsync(string name, int supplierId)
+        {
+            return await _context.Products
+                .FirstOrDefaultAsync(p => p.Name == name && p.SupplierId == supplierId);
+        }
+
         // GET: Products/Create
         public IActionResult Create()
         {
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name");
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID");
-            return View();
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name");
+            var product = new Product
+            {
+                EntryDate = DateTime.Now
+            };
+            return View(product);
         }
 
         // POST: Products/Create
@@ -62,12 +132,24 @@ namespace InventoryManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(product);
-                await _context.SaveChangesAsync();
+                var existingProduct = await FindProductByNameAndSupplierAsync(product.Name, product.SupplierId);
+                if (existingProduct != null)
+                {
+                    existingProduct.Quantity += product.Quantity;
+                    _context.Update(existingProduct);
+                    await _context.SaveChangesAsync();
+                    TempData["Message"] = "Sản phẩm của bạn đã có trước đó, đã cập nhật lại số lượng.";
+                }
+                else
+                {
+                    _context.Add(product);
+                    await _context.SaveChangesAsync();
+                    TempData["Message"] = "Đã thêm thành công.";
+                }
                 return RedirectToAction(nameof(Index));
             }
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name", product.SupplierId);
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", product.WarehouseID);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", product.WarehouseID);
             return View(product);
         }
 
@@ -127,6 +209,7 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Products/Delete/5
+        // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,13 +219,11 @@ namespace InventoryManagement.Controllers
 
             var product = await _context.Products
                 .Include(p => p.Supplier)
-                .Include(p => p.Warehouse)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (product == null)
             {
                 return NotFound();
             }
-
             return View(product);
         }
 
@@ -158,6 +239,32 @@ namespace InventoryManagement.Controllers
             }
 
             await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        // Xuất kho
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Export(int ID, int ExportQuantity)
+        {
+            var product = await _context.Products.FindAsync(ID);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            if (ExportQuantity > product.Quantity)
+            {
+                TempData["Message"] = "Vượt quá số lượng Hàng có trong kho.";
+            }
+            else
+            {
+                product.Quantity -= ExportQuantity;
+                _context.Update(product);
+                await _context.SaveChangesAsync();
+                TempData["Message"] = "Xuất hàng thành công.";
+            }
+
             return RedirectToAction(nameof(Index));
         }
 

@@ -1,71 +1,70 @@
-﻿@model InventoryManagement.Models.Product
+﻿@model Product
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "XUẤT KHO";
 }
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Delete</h1>
+<h1>Xuất kho</h1>
 
-<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Product</h4>
+    <h4>Hàng</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProductID)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProductID)
-        </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Description)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Description)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Price)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Price)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Quantity)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Quantity)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.EntryDate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.EntryDate)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Supplier)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Supplier.Name)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Warehouse)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Warehouse.Name)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Warehouse.WarehouseID)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Warehouse.Name)
         </dd>
     </dl>
-    
-    <form asp-action="Delete">
+
+    <form asp-action="Export" method="post">
+        <div class="form-group">
+            <label for="ExportQuantity">Output quantity:</label>
+            <input type="number" id="ExportQuantity" name="ExportQuantity" class="form-control" />
+        </div>
         <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <br />
+        <input type="submit" value="Export" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>
 </div>
+
