@@ -1004,7 +1004,6 @@ D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\staticweba
 D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.InventoryManagement.props
 D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.InventoryManagement.props
 D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\staticwebassets.pack.json
-D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\Views\Accounts\Login.cshtml.rz.scp.css
 D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\bundle\InventoryManagement.styles.css
 D:\QuanLyKho\InventoryManagement\InventoryManagement\obj\Debug\net8.0\scopedcss\projectbundle\InventoryManagement.bundle.scp.css

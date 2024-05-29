@@ -78,8 +78,15 @@ namespace InventoryManagement.Controllers
 
         // GET: Accounts
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, string roleFilter, string currentRoleFilter, int? pageNumber)
+        public async Task<IActionResult> Index(
+            string sortOrder,
+            string currentFilter,
+            string searchString,
+            string roleFilter,
+            string currentRoleFilter,
+            int? pageNumber)
         {
+            // Sorting parameters
             ViewData["CurrentSort"] = sortOrder;
             ViewData["UsernameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "username_desc" : "";
             ViewData["PasswordSortParm"] = sortOrder == "password" ? "password_desc" : "password";
@@ -88,6 +95,7 @@ namespace InventoryManagement.Controllers
             ViewData["CurrentFilter"] = searchString;
             ViewData["CurrentRoleFilter"] = roleFilter;
 
+            // Paging and filtering logic
             if (searchString != null || roleFilter != null)
             {
                 pageNumber = 1;
@@ -98,45 +106,55 @@ namespace InventoryManagement.Controllers
                 roleFilter = currentRoleFilter;
             }
 
-            var accounts = from a in _context.Accounts.Include(a => a.Manager)
-                           select a;
+            // Fetch accounts with related managers
+            var accountsContext = _context.Accounts.Include(a => a.Manager).AsQueryable();
 
+            // Apply search filter
             if (!String.IsNullOrEmpty(searchString))
             {
-                accounts = accounts.Where(a => a.Username.Contains(searchString));
+                accountsContext = accountsContext.Where(a => a.Username.Contains(searchString));
             }
 
+            // Apply role filter
             if (!String.IsNullOrEmpty(roleFilter))
             {
-                accounts = accounts.Where(a => a.Role == roleFilter);
+                accountsContext = accountsContext.Where(a => a.Role == roleFilter);
             }
 
+            // Apply sorting
             switch (sortOrder)
             {
                 case "username_desc":
-                    accounts = accounts.OrderByDescending(a => a.Username);
+                    accountsContext = accountsContext.OrderByDescending(a => a.Username);
                     break;
                 case "password_desc":
-                    accounts = accounts.OrderByDescending(a => a.Password);
+                    accountsContext = accountsContext.OrderByDescending(a => a.Password);
                     break;
                 case "manager_desc":
-                    accounts = accounts.OrderByDescending(a => a.Manager.Name);
+                    accountsContext = accountsContext.OrderByDescending(a => a.Manager.Name);
                     break;
                 case "role":
-                    accounts = accounts.OrderBy(a => a.Role);
+                    accountsContext = accountsContext.OrderBy(a => a.Role);
                     break;
                 case "role_desc":
-                    accounts = accounts.OrderByDescending(a => a.Role);
+                    accountsContext = accountsContext.OrderByDescending(a => a.Role);
                     break;
                 default:
-                    accounts = accounts.OrderBy(a => a.Username);
+                    accountsContext = accountsContext.OrderBy(a => a.Username);
                     break;
             }
 
-            int pageSize = 8;
-            return View(await PaginatedList<Account>.CreateAsync(accounts.AsNoTracking(), pageNumber ?? 1, pageSize));
-        }
+            // Define a list of roles
+            var roles = new List<string> { "Admin", "Manager" }; // Example roles, replace with your actual roles
+            var roleSelectList = new SelectList(roles);
 
+            // Add the roles to ViewData
+            ViewData["RoleList"] = roleSelectList;
+
+            // Define page size and return paginated list
+            int pageSize = 8;
+            return View(await PaginatedList<Account>.CreateAsync(accountsContext.AsNoTracking(), pageNumber ?? 1, pageSize));
+        }
 
         [Authorize(Roles = "Admin")]
         // GET: Accounts/Details/5
