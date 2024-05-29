@@ -1,22 +1,22 @@
 ﻿@model PaginatedList<InventoryManagement.Models.Product>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "DANH SÁCH HÀNG HÓA";
 }
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Danh sách sản phẩm</h1>
+<h1>Danh sách hàng hóa</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Nhập hàng</a>
 </p>
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
         <p>
-            Tìm kiếm sản phẩm <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên sản phẩm" />
-            <input type="submit" value="Search" class="btn btn-default" /> |
-            <a asp-action="Index">Back to Full List</a>
+            Tìm kiếm <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên hàng hóa" />
+            <input type="submit" value="Tìm" class="btn btn-default" /> |
+            <a asp-action="Index">Trở về</a>
         </p>
     </div>
 </form>
@@ -53,7 +53,9 @@
             <th>
                 Kho
             </th>
-            <th></th>
+            <th>
+                Thao tác
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -82,9 +84,9 @@
                     @Html.DisplayFor(modelItem => item.Warehouse.Name)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ID">Xuất</a>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Sửa</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Xuất kho</a>
                 </td>
             </tr>
         }
@@ -100,14 +102,14 @@
    asp-route-pageNumber="@(Model.PageIndex - 1)"
    asp-route-currentFilter="@ViewData["CurrentFilter"]"
    class="btn btn-default @prevDisabled">
-    Previous
+    Trước
 </a>
 <a asp-action="Index"
    asp-route-sortOrder="@ViewData["CurrentSort"]"
    asp-route-pageNumber="@(Model.PageIndex + 1)"
    asp-route-currentFilter="@ViewData["CurrentFilter"]"
    class="btn btn-default @nextDisabled">
-    Next
+    Tiếp
 </a>
 
 @section Scripts {

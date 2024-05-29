@@ -45,18 +45,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="WarehouseID" class="control-label"></label>
-                <input asp-for="WarehouseID" class="form-control" />
-                <span asp-validation-for="WarehouseID" class="text-danger"></span>
+                <select asp-for="WarehouseID" class="form-control" asp-items="ViewBag.WarehouseID"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Import" class="btn btn-primary" />
+                <input type="submit" value="Nhập" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Trở về</a>
 </div>
 
 @section Scripts {

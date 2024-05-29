@@ -167,7 +167,7 @@ namespace InventoryManagement.Controllers
                 return NotFound();
             }
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name", product.SupplierId);
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", product.WarehouseID);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", product.WarehouseID);
             return View(product);
         }
 
@@ -204,7 +204,7 @@ namespace InventoryManagement.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name", product.SupplierId);
-            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "WarehouseID", product.WarehouseID);
+            ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", product.WarehouseID);
             return View(product);
         }
 
@@ -219,6 +219,7 @@ namespace InventoryManagement.Controllers
 
             var product = await _context.Products
                 .Include(p => p.Supplier)
+                .Include(p => p.Warehouse)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (product == null)
             {

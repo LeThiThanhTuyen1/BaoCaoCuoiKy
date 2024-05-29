@@ -43,13 +43,13 @@
             @Html.DisplayFor(model => model.EntryDate)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Supplier)
+            @Html.DisplayNameFor(model => model.SupplierId)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Supplier.Name)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Warehouse.Name)
+            @Html.DisplayNameFor(model => model.WarehouseID)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Warehouse.Name)
@@ -58,13 +58,13 @@
 
     <form asp-action="Export" method="post">
         <div class="form-group">
-            <label for="ExportQuantity">Output quantity:</label>
+            <label for="ExportQuantity">Nhập số lượng hàng để xuất kho:</label>
             <input type="number" id="ExportQuantity" name="ExportQuantity" class="form-control" />
         </div>
         <input type="hidden" asp-for="ID" />
         <br />
-        <input type="submit" value="Export" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Xuất kho" class="btn btn-danger" /> |
+        <a asp-action="Index">Trở về</a>
     </form>
 </div>
 
