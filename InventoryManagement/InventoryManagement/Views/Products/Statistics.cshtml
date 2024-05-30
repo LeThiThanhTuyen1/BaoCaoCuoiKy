@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Thống kê hàng";
+}
+
+<head>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+
+<h1>Thống kê hàng</h1>
+
+<h3>Giá trị hàng tồn kho: @ViewData["TotalInventoryValue"] VND</h3>
+
+<h3>Số lượng hàng tồn kho theo nhà cung cấp:</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nhà cung cấp</th>
+            <th>Số lượng</th>
+            <th </th> <!-- Thêm cột chi tiết -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in (IEnumerable<dynamic>)ViewData["SupplierInventory"])
+        {
+            <tr>
+                <td>@item.SupplierName</td>
+                <td>@item.TotalQuantity</td>
+                <td><a asp-action="SupplierProducts" asp-route-supplierName="@item.SupplierName">Chi tiết</a></td>
+
+            </tr>
+        }
+    </tbody>
+</table>

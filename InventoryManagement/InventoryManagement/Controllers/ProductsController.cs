@@ -307,5 +307,33 @@ namespace InventoryManagement.Controllers
         {
             return _context.Products.Any(e => e.ID == id);
         }
+
+        //Thống kê từng nhà cung cấp còn lại bao nhiêu sản phẩm 
+        public IActionResult Statistics()
+        {
+            var totalInventoryValue = _context.Products.Sum(p => p.Quantity * p.Price);
+
+            var supplierInventory = _context.Products
+                .GroupBy(p => p.Supplier.Name)
+                .Select(g => new { SupplierName = g.Key, TotalQuantity = g.Sum(p => p.Quantity) })
+                .ToList();
+
+            ViewData["TotalInventoryValue"] = totalInventoryValue;
+            ViewData["SupplierInventory"] = supplierInventory;
+
+            return View();
+        }
+
+        //Xem số lượng sản phẩm còn lại của từng nhà cung cấp
+        public IActionResult SupplierProducts(string supplierName)
+        {
+            var supplierProducts = _context.Products
+                .Where(p => p.Supplier.Name == supplierName)
+                .Select(p => new { ProductName = p.Name, Quantity = p.Quantity })
+                .ToList();
+
+            ViewData["SupplierName"] = supplierName;
+            return View(supplierProducts);
+        }
     }
 }
