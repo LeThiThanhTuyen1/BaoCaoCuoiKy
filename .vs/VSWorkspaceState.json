@@ -5,8 +5,10 @@
     "\\InventoryManagement\\InventoryManagement",
     "\\InventoryManagement\\InventoryManagement\\Controllers",
     "\\InventoryManagement\\InventoryManagement\\Views",
+    "\\InventoryManagement\\InventoryManagement\\Views\\Accounts",
+    "\\InventoryManagement\\InventoryManagement\\Views\\Products",
     "\\InventoryManagement\\InventoryManagement\\Views\\Warehouses"
   ],
-  "SelectedNode": "\\InventoryManagement\\InventoryManagement\\Controllers\\AccountsController.cs",
+  "SelectedNode": "\\InventoryManagement\\InventoryManagement.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -252,111 +252,6 @@ namespace InventoryManagement.Data
                     Password = "manager4",
                     Role = "Manager",
                     ManagerId = managers[4].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager5",
-                    Password = "manager5",
-                    Role = "Manager",
-                    ManagerId = managers[5].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager6",
-                    Password = "manager6",
-                    Role = "Manager",
-                    ManagerId = managers[6].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager7",
-                    Password = "manager7",
-                    Role = "Manager",
-                    ManagerId = managers[7].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager8",
-                    Password = "manager8",
-                    Role = "Manager",
-                    ManagerId = managers[8].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager9",
-                    Password = "manager9",
-                    Role = "Manager",
-                    ManagerId = managers[9].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager10",
-                    Password = "manager10",
-                    Role = "Manager",
-                    ManagerId = managers[10].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager11",
-                    Password = "manager11",
-                    Role = "Manager",
-                    ManagerId = managers[11].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager12",
-                    Password = "manager12",
-                    Role = "Manager",
-                    ManagerId = managers[12].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager13",
-                    Password = "manager13",
-                    Role = "Manager",
-                    ManagerId = managers[13].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager14",
-                    Password = "manager14",
-                    Role = "Manager",
-                    ManagerId = managers[14].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager15",
-                    Password = "manager15",
-                    Role = "Manager",
-                    ManagerId = managers[15].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager16",
-                    Password = "manager16",
-                    Role = "Manager",
-                    ManagerId = managers[16].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager17",
-                    Password = "manager17",
-                    Role = "Manager",
-                    ManagerId = managers[17].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager18",
-                    Password = "manager18",
-                    Role = "Manager",
-                    ManagerId = managers[18].ManagerId
-                },
-                new Account
-                {
-                    Username = "manager19",
-                    Password = "manager19",
-                    Role = "Manager",
-                    ManagerId = managers[19].ManagerId
                 }
             };
             foreach (var account in accounts)
@@ -527,6 +422,25 @@ namespace InventoryManagement.Data
                 context.Products.Add(product);
             }
             context.SaveChanges();
+            var histories = new History[]
+{
+    new History
+    {
+        ProductName = "Gỗ Sồi",
+        Action = "Nhập Kho",
+        Date = DateTime.Now,
+        Quantity = 100,
+        SupplierName = "Công ty TNHH 1 thành viên MCK",
+        WarehouseName = "Kho B"
+    },
+    // Add more history data here
+};
+            foreach (var history in histories)
+            {
+                context.Histories.Add(history);
+            }
+            context.SaveChanges();
         }
+
     }
 }
