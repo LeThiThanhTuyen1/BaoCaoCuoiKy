@@ -135,6 +135,7 @@ namespace InventoryManagement.Controllers
             if (ModelState.IsValid)
             {
                 var existingProduct = await FindProductByNameAndSupplierAsync(product.Name, product.SupplierId);
+                
                 if (existingProduct != null)
                 {
                     existingProduct.Quantity += product.Quantity;
