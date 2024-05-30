@@ -56,6 +56,10 @@ public class InventoryContext : DbContext
             .IsRequired();
 
         modelBuilder.Entity<History>()
+        .Property(h => h.Quantitybegin)
+        .IsRequired();
+
+        modelBuilder.Entity<History>()
             .Property(h => h.Quantity)
             .IsRequired();
 

@@ -155,6 +155,7 @@ namespace InventoryManagement.Controllers
                     ProductName = product.Name,
                     Action = "Nhập Hàng",
                     Date = DateTime.Now,
+                    Quantitybegin = 0,
                     Quantity = product.Quantity,
                     SupplierName = supplier.Name,
                     WarehouseName = warehouse.Name
@@ -289,6 +290,7 @@ namespace InventoryManagement.Controllers
                     ProductName = product.Name,
                     Action = "Xuất Kho",
                     Date = DateTime.Now,
+                    Quantitybegin = product.Quantity,
                     Quantity = ExportQuantity,
                     SupplierName = supplier.Name,
                     WarehouseName = warehouse.Name
