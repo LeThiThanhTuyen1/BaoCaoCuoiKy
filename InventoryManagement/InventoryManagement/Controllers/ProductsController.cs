@@ -23,7 +23,8 @@ namespace InventoryManagement.Controllers
             string searchString, 
             string sortOrder, 
             string currentFilter, 
-            int? pageNumber)
+            int? pageNumber,
+            string warehouseID)
         {
             if (searchString != null)
             {
@@ -75,8 +76,31 @@ namespace InventoryManagement.Controllers
 
             int pageSize = 5;
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
+                
+    // Tạo danh sách kho cho dropdown
+        var warehouses = await _context.Warehouses.Select(w => new SelectListItem
+        {
+            Value = w.WarehouseID.ToString(),
+            Text = w.Name
+        }).ToListAsync();
+        ViewData["WarehouseList"] = new SelectList(warehouses, "Value", "Text");
+    
+        // Truy vấn sản phẩm
+        var products = _context.Products.Include(p => p.Supplier).Include(p => p.Warehouse).AsQueryable();
+    
+        // Lọc theo kho
+        if (!string.IsNullOrEmpty(warehouseID))
+        {
+            int warehouseId = int.Parse(warehouseID);
+            products = products.Where(p => p.WarehouseID== warehouseId);
         }
-
+    
+        // Truyền giá trị lọc vào view
+        ViewData["WarehouseID"] = warehouseID;
+    
+        return View(await products.ToListAsync());
+    }
+    
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
