@@ -36,7 +36,7 @@
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100px;
+            min-height: 100vh;
         }
 
         .main-layout {
@@ -113,7 +113,7 @@
                                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý hàng hóa</a>
                                             <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                                                 <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="" asp-action="Index">Thống kê</a>
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="dropdown-item" asp-area="" asp-controller="History" asp-action="Index">Lịch sử xuất nhập</a>
@@ -123,9 +123,6 @@
 
                                         <li class="nav-item">
                                             <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng</a>
                                         </li>
                                     }
                                     else if (role == "Manager")
