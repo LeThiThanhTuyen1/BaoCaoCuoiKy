@@ -126,6 +126,8 @@ namespace InventoryManagement.Controllers
         // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+     
+        // POST: Products/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,ProductID,Name,Description,Price,Quantity,EntryDate,SupplierId,WarehouseID")] Product product)
@@ -137,22 +139,37 @@ namespace InventoryManagement.Controllers
                 {
                     existingProduct.Quantity += product.Quantity;
                     _context.Update(existingProduct);
-                    await _context.SaveChangesAsync();
-                    TempData["Message"] = "Sản phẩm của bạn đã có trước đó, đã cập nhật lại số lượng.";
                 }
                 else
                 {
                     _context.Add(product);
-                    await _context.SaveChangesAsync();
-                    TempData["Message"] = "Đã thêm thành công.";
                 }
+
+                await _context.SaveChangesAsync();
+
+                // Log the import transaction
+                var supplier = await _context.Suppliers.FindAsync(product.SupplierId);
+                var warehouse = await _context.Warehouses.FindAsync(product.WarehouseID);
+                var history = new History
+                {
+                    ProductName = product.Name,
+                    Action = "Nhập Hàng",
+                    Date = DateTime.Now,
+                    Quantity = product.Quantity,
+                    SupplierName = supplier.Name,
+                    WarehouseName = warehouse.Name
+                };
+
+                _context.Histories.Add(history);
+                await _context.SaveChangesAsync();
+
+                TempData["Message"] = existingProduct != null ? "Sản phẩm của bạn đã có trước đó, đã cập nhật lại số lượng." : "Đã thêm thành công.";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "Name", product.SupplierId);
             ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", product.WarehouseID);
             return View(product);
         }
-
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -208,7 +225,7 @@ namespace InventoryManagement.Controllers
             return View(product);
         }
 
-        // GET: Products/Delete/5
+
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -243,7 +260,7 @@ namespace InventoryManagement.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // Xuất kho
+        // POST: Products/Export
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Export(int ID, int ExportQuantity)
@@ -263,6 +280,23 @@ namespace InventoryManagement.Controllers
                 product.Quantity -= ExportQuantity;
                 _context.Update(product);
                 await _context.SaveChangesAsync();
+
+                // Log the export transaction
+                var supplier = await _context.Suppliers.FindAsync(product.SupplierId);
+                var warehouse = await _context.Warehouses.FindAsync(product.WarehouseID);
+                var history = new History
+                {
+                    ProductName = product.Name,
+                    Action = "Xuất Kho",
+                    Date = DateTime.Now,
+                    Quantity = ExportQuantity,
+                    SupplierName = supplier.Name,
+                    WarehouseName = warehouse.Name
+                };
+
+                _context.Histories.Add(history);
+                await _context.SaveChangesAsync();
+
                 TempData["Message"] = "Xuất hàng thành công.";
             }
 

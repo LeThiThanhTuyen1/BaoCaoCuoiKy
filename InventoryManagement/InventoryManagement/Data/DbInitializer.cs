@@ -422,6 +422,25 @@ namespace InventoryManagement.Data
                 context.Products.Add(product);
             }
             context.SaveChanges();
+            var histories = new History[]
+{
+    new History
+    {
+        ProductName = "Gỗ Sồi",
+        Action = "Nhập Kho",
+        Date = DateTime.Now,
+        Quantity = 100,
+        SupplierName = "Công ty TNHH 1 thành viên MCK",
+        WarehouseName = "Kho B"
+    },
+    // Add more history data here
+};
+            foreach (var history in histories)
+            {
+                context.Histories.Add(history);
+            }
+            context.SaveChanges();
         }
+
     }
 }
