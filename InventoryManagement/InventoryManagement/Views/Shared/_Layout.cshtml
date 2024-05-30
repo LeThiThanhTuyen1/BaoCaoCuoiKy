@@ -94,6 +94,9 @@
                                         <li class="nav-item">
                                             <a class="nav-link" asp-area="" asp-controller="Managers" asp-action="Index">Người quản lý</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng</a>
+                                        </li>
                                     }
                                     else if (role == "Manager")
                                     {
@@ -108,6 +111,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng</a>
                                         </li>
                                     }
                                     @if (User.Identity.IsAuthenticated)

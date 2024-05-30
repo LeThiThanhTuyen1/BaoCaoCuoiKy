@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "79ja9d1tc7E1z9TJidxl+NKtPxpXX1jAuy1QivNCQDE=",
+  "Hash": "SYPvaepXXsWzo1fcJViyRJTHklPTENiHbjfmZtxFp9c=",
   "Source": "InventoryManagement",
   "BasePath": "_content/InventoryManagement",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "InventoryManagement\\wwwroot",
       "Source": "InventoryManagement",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.css.map",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -242,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -261,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -280,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -299,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -318,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -356,13 +356,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -375,13 +375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -394,13 +394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -413,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -432,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -451,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -470,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -489,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -508,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -527,13 +527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -546,13 +546,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -565,13 +565,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -584,13 +584,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -603,13 +603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -622,13 +622,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -641,13 +641,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -679,13 +679,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -698,13 +698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -717,13 +717,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -736,13 +736,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -755,13 +755,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -774,13 +774,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.js",
       "AssetKind": "All",
@@ -793,13 +793,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.js.map",
       "AssetKind": "All",
@@ -812,13 +812,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -831,13 +831,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -850,13 +850,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hoang Phu\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InventoryManagement.styles.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InventoryManagement.styles.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "InventoryManagement.styles.css",
       "AssetKind": "All",
@@ -869,13 +869,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InventoryManagement.styles.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\bundle\\InventoryManagement.styles.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InventoryManagement.bundle.scp.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InventoryManagement.bundle.scp.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "InventoryManagement.bundle.scp.css",
       "AssetKind": "All",
@@ -888,13 +888,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InventoryManagement.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\InventoryManagement.bundle.scp.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\site.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\style.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\favicon.ico",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/bootstrap.css",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap-reboot.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\bootstrap-reboot.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\font-awesome.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\font-awesome.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/font-awesome.min.css",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\font-awesome.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\icomoon.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\icomoon.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/icomoon.css",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\icomoon.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\jquery.fancybox.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\jquery.fancybox.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/jquery.fancybox.min.css",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\jquery.fancybox.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\jquery.mCustomScrollbar.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\jquery.mCustomScrollbar.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/jquery.mCustomScrollbar.min.css",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\jquery.mCustomScrollbar.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\responsive.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\responsive.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/responsive.css",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\responsive.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/style.css",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\style.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style-login.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style-login.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/css/style-login.css",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\css\\style-login.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\FontAwesome.otf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\FontAwesome.otf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/FontAwesome.otf",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\FontAwesome.otf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.eot",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.eot",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/fontawesome-webfont.eot",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.svg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.svg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/fontawesome-webfont.svg",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/fontawesome-webfont.ttf",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.woff",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.woff",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/fontawesome-webfont.woff",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.woff2",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\fontawesome-webfont.woff2",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/fontawesome-webfont.woff2",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\IcoMoon-Free.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\IcoMoon-Free.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/IcoMoon-Free.ttf",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\IcoMoon-Free.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Black.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Black.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-Black.ttf",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-Black.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-BlackItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-BlackItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-BlackItalic.ttf",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-BlackItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Bold.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Bold.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-Bold.ttf",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-Bold.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-BoldItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-BoldItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-BoldItalic.ttf",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-BoldItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraBold.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraBold.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-ExtraBold.ttf",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-ExtraBold.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraBoldItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraBoldItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-ExtraBoldItalic.ttf",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-ExtraBoldItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraLight.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraLight.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-ExtraLight.ttf",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-ExtraLight.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraLightItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ExtraLightItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-ExtraLightItalic.ttf",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-ExtraLightItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Italic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Italic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-Italic.ttf",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-Italic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Light.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Light.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-Light.ttf",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-Light.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-LightItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-LightItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-LightItalic.ttf",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-LightItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Medium.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Medium.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-Medium.ttf",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-Medium.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-MediumItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-MediumItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-MediumItalic.ttf",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-MediumItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Regular.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Regular.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-Regular.ttf",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-Regular.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-SemiBold.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-SemiBold.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-SemiBold.ttf",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-SemiBold.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-SemiBoldItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-SemiBoldItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-SemiBoldItalic.ttf",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-SemiBoldItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Thin.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-Thin.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-Thin.ttf",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-Thin.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ThinItalic.ttf",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\fonts\\Poppins-ThinItalic.ttf",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/fonts/Poppins-ThinItalic.ttf",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\fonts\\Poppins-ThinItalic.ttf"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\banner.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\banner.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/banner.jpg",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\banner.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\bg.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\bg.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/bg.jpg",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\bg.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\choose_bottom_cross.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\choose_bottom_cross.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/choose_bottom_cross.png",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\choose_bottom_cross.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\food.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\food.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/food.jpg",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\food.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\h_cross.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\h_cross.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/h_cross.png",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\h_cross.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon1.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon1.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/icon1.png",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\icon1.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon2.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon2.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/icon2.png",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\icon2.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon3.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon3.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/icon3.png",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\icon3.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon4.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\icon4.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/icon4.png",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\icon4.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img1.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img1.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/img1.jpg",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\img1.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img2.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img2.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/img2.jpg",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\img2.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img3.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\img3.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/img3.jpg",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\img3.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\loading.gif",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\loading.gif",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/loading.gif",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\loading.gif"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\logo.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\logo.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/logo.png",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\logo.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\menu_icon.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\menu_icon.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/menu_icon.png",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\menu_icon.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product1.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product1.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/product1.jpg",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\product1.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product2.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product2.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/product2.jpg",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\product2.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product3.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product3.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/product3.jpg",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\product3.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product4.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product4.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/product4.jpg",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\product4.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product5.jpg",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\product5.jpg",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/product5.jpg",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\product5.jpg"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\te.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\te.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/te.png",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\te.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\tes1.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\tes1.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/tes1.png",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\tes1.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\top_head.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\images\\top_head.png",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/images/top_head.png",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\images\\top_head.png"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\bootstrap.bundle.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery.mCustomScrollbar.concat.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/js/jquery.mCustomScrollbar.concat.min.js",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\js\\jquery.mCustomScrollbar.concat.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/js/jquery.min.js",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\js\\jquery.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery-3.0.0.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\jquery-3.0.0.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/js/jquery-3.0.0.min.js",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\js\\jquery-3.0.0.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\popper.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\js\\popper.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "jon/js/popper.min.js",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\jon\\js\\popper.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\js\\script.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\js\\script.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/script.js",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\js\\script.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\js\\site.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2791,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2810,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2829,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2848,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2867,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2886,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2905,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2943,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2962,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2981,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -3000,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3019,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3038,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -3057,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3076,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3095,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3114,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3133,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3152,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3171,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3190,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3209,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3228,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3266,10 +3266,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "InventoryManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\asiu\\InventoryManagement\\InventoryManagement\\wwwroot\\",
       "BasePath": "_content/InventoryManagement",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
