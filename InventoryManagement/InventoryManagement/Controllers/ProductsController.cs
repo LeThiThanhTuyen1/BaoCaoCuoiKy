@@ -153,7 +153,7 @@ namespace InventoryManagement.Controllers
                 var history = new History
                 {
                     ProductName = product.Name,
-                    Action = "Nhập Hàng",
+                    Action = " Nhập Hàng ",
                     Date = DateTime.Now,
                     Quantitybegin = 0,
                     Quantity = product.Quantity,
