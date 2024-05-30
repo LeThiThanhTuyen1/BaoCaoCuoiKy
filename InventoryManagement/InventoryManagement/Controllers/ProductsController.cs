@@ -20,12 +20,21 @@ namespace InventoryManagement.Controllers
 
         // GET: Products
         public async Task<IActionResult> Index(
-            string searchString, 
-            string sortOrder, 
-            string currentFilter, 
+            string searchString,
+            string sortOrder,
+            string currentFilter,
             int? pageNumber,
             string warehouseID)
         {
+            // Chuẩn bị danh sách kho cho dropdown
+            var warehouses = await _context.Warehouses.Select(w => new SelectListItem
+            {
+                Value = w.WarehouseID.ToString(),
+                Text = w.Name
+            }).ToListAsync();
+            ViewData["WarehouseList"] = new SelectList(warehouses, "Value", "Text");
+
+            // Xử lý tìm kiếm và bộ lọc hiện tại
             if (searchString != null)
             {
                 pageNumber = 1;
@@ -41,17 +50,27 @@ namespace InventoryManagement.Controllers
             ViewData["SupplierSortParm"] = String.IsNullOrEmpty(sortOrder) ? "supplier_desc" : "";
             ViewData["CurrentSort"] = sortOrder;
 
+            // Truy vấn sản phẩm
             var products = from p in _context.Products
                             .Include(p => p.Supplier)
                             .Include(p => p.Warehouse)
                            select p;
             products = products.Where(p => p.Quantity > 0);
 
+            // Lọc theo chuỗi tìm kiếm
             if (!String.IsNullOrEmpty(searchString))
             {
                 products = products.Where(s => s.Name.Contains(searchString));
             }
 
+            // Lọc theo kho
+            if (!string.IsNullOrEmpty(warehouseID))
+            {
+                int warehouseId = int.Parse(warehouseID);
+                products = products.Where(p => p.WarehouseID == warehouseId);
+            }
+
+            // Logic sắp xếp
             switch (sortOrder)
             {
                 case "name_desc":
@@ -74,33 +93,14 @@ namespace InventoryManagement.Controllers
                     break;
             }
 
+            // Thiết lập WarehouseID trong ViewData để truyền vào view
+            ViewData["WarehouseID"] = warehouseID;
+
+            // Phân trang
             int pageSize = 5;
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
-                
-    // Tạo danh sách kho cho dropdown
-        var warehouses = await _context.Warehouses.Select(w => new SelectListItem
-        {
-            Value = w.WarehouseID.ToString(),
-            Text = w.Name
-        }).ToListAsync();
-        ViewData["WarehouseList"] = new SelectList(warehouses, "Value", "Text");
-    
-        // Truy vấn sản phẩm
-        var products = _context.Products.Include(p => p.Supplier).Include(p => p.Warehouse).AsQueryable();
-    
-        // Lọc theo kho
-        if (!string.IsNullOrEmpty(warehouseID))
-        {
-            int warehouseId = int.Parse(warehouseID);
-            products = products.Where(p => p.WarehouseID== warehouseId);
         }
-    
-        // Truyền giá trị lọc vào view
-        ViewData["WarehouseID"] = warehouseID;
-    
-        return View(await products.ToListAsync());
-    }
-    
+
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -150,7 +150,7 @@ namespace InventoryManagement.Controllers
         // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-     
+
         // POST: Products/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -159,7 +159,7 @@ namespace InventoryManagement.Controllers
             if (ModelState.IsValid)
             {
                 var existingProduct = await FindProductByNameAndSupplierAsync(product.Name, product.SupplierId);
-                
+
                 if (existingProduct != null)
                 {
                     existingProduct.Quantity += product.Quantity;
