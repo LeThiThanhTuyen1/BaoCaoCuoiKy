@@ -19,8 +19,16 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Tên sản phẩm</th>
-                <th>Số lượng còn lại</th>
+                <th>
+                    <a asp-action="SupplierProducts" asp-route-supplierName="@ViewData["SupplierName"]" asp-route-sortOrder="@ViewData["ProductNameSortParam"]">
+                        Tên sản phẩm
+                    </a>
+                </th>
+                <th>
+                    <a asp-action="SupplierProducts" asp-route-supplierName="@ViewData["SupplierName"]" asp-route-sortOrder="@ViewData["QuantitySortParam"]">
+                        Số lượng còn lại
+                    </a>
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +39,7 @@ else
                     <td>@item.Quantity</td>
                 </tr>
             }
+
         </tbody>
     </table>
 }

@@ -14,9 +14,17 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Nhà cung cấp</th>
-            <th>Số lượng</th>
-            <th </th> <!-- Thêm cột chi tiết -->
+            <th>
+                <a asp-action="Statistics" asp-route-sortOrder="@ViewData["SupplierNameSortParam"]">
+                    Nhà cung cấp
+                </a>
+            </th>
+            <th>
+                <a asp-action="Statistics" asp-route-sortOrder="@ViewData["QuantitySortParam"]">
+                    Số lượng
+                </a>
+            </th>
+            <th></th> <!-- Thêm cột chi tiết -->
         </tr>
     </thead>
     <tbody>
@@ -26,7 +34,6 @@
                 <td>@item.SupplierName</td>
                 <td>@item.TotalQuantity</td>
                 <td><a asp-action="SupplierProducts" asp-route-supplierName="@item.SupplierName">Chi tiết</a></td>
-
             </tr>
         }
     </tbody>

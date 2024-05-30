@@ -336,14 +336,35 @@ namespace InventoryManagement.Controllers
         }
 
         //Thống kê từng nhà cung cấp còn lại bao nhiêu sản phẩm 
-        public IActionResult Statistics()
+        public IActionResult Statistics(string sortOrder)
         {
+            // Lấy tổng giá trị hàng tồn kho
             var totalInventoryValue = _context.Products.Sum(p => p.Quantity * p.Price);
 
+            // Lấy thông tin tồn kho theo nhà cung cấp
             var supplierInventory = _context.Products
                 .GroupBy(p => p.Supplier.Name)
-                .Select(g => new { SupplierName = g.Key, TotalQuantity = g.Sum(p => p.Quantity) })
-                .ToList();
+                .Select(g => new { SupplierName = g.Key, TotalQuantity = g.Sum(p => p.Quantity) });
+
+            // Thêm sắp xếp
+            ViewData["SupplierNameSortParam"] = String.IsNullOrEmpty(sortOrder) || sortOrder != "name_desc" ? "name_desc" : "";
+            ViewData["QuantitySortParam"] = sortOrder == "quantity_desc" ? "quantity_asc" : "quantity_desc";
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    supplierInventory = supplierInventory.OrderByDescending(g => g.SupplierName);
+                    break;
+                case "quantity_desc":
+                    supplierInventory = supplierInventory.OrderByDescending(g => g.TotalQuantity);
+                    break;
+                case "quantity_asc":
+                    supplierInventory = supplierInventory.OrderBy(g => g.TotalQuantity);
+                    break;
+                default:
+                    supplierInventory = supplierInventory.OrderBy(g => g.SupplierName);
+                    break;
+            }
 
             ViewData["TotalInventoryValue"] = totalInventoryValue;
             ViewData["SupplierInventory"] = supplierInventory;
@@ -352,15 +373,34 @@ namespace InventoryManagement.Controllers
         }
 
         //Xem số lượng sản phẩm còn lại của từng nhà cung cấp
-        public IActionResult SupplierProducts(string supplierName)
+        public IActionResult SupplierProducts(string supplierName, string sortOrder)
         {
             var supplierProducts = _context.Products
                 .Where(p => p.Supplier.Name == supplierName)
-                .Select(p => new { ProductName = p.Name, Quantity = p.Quantity })
-                .ToList();
+                .Select(p => new { ProductName = p.Name, Quantity = p.Quantity });
 
             ViewData["SupplierName"] = supplierName;
-            return View(supplierProducts);
+
+            ViewData["ProductNameSortParam"] = String.IsNullOrEmpty(sortOrder) || sortOrder != "name_desc" ? "name_desc" : "";
+            ViewData["QuantitySortParam"] = sortOrder == "quantity_desc" ? "quantity_asc" : "quantity_desc";
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    supplierProducts = supplierProducts.OrderByDescending(p => p.ProductName);
+                    break;
+                case "quantity_desc":
+                    supplierProducts = supplierProducts.OrderByDescending(p => p.Quantity);
+                    break;
+                case "quantity_asc":
+                    supplierProducts = supplierProducts.OrderBy(p => p.Quantity);
+                    break;
+                default:
+                    supplierProducts = supplierProducts.OrderBy(p => p.ProductName);
+                    break;
+            }
+
+            return View(supplierProducts.ToList());
         }
     }
 }
