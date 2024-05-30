@@ -18,6 +18,12 @@
             <input type="submit" value="Tìm" class="btn btn-default" /> |
             <a asp-action="Index">Trở về</a>
         </p>
+        <p>
+            Lọc theo kho: 
+            @Html.DropDownList("warehouseID", (SelectList)ViewData["WarehouseList"], "Tất cả", new { @class = "form-control" })
+            <input type="submit" value="Tìm" class="btn btn-default" /> |
+            <a asp-action="Index">Trở về danh sách đầy đủ</a>
+        </p>
     </div>
 </form>
 
