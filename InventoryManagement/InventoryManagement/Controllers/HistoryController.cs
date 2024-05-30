@@ -2,6 +2,7 @@
 using InventoryManagement;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 public class HistoryController : Controller
 {
@@ -12,10 +13,15 @@ public class HistoryController : Controller
         _context = context;
     }
 
-    public async Task<IActionResult> Index(string searchString, string sortOrder, int? pageNumber)
+    public async Task<IActionResult> Index(string searchString, string sortOrder, int? pageNumber, string actionFilter)
     {
         ViewData["CurrentFilter"] = searchString;
         ViewData["CurrentSort"] = sortOrder;
+        ViewData["CurrentActionFilter"] = actionFilter;
+
+        // Retrieve the list of actions for the dropdown
+        var actionList = await _context.Histories.Select(h => h.Action).Distinct().ToListAsync();
+        ViewData["ActionList"] = new SelectList(actionList);
 
         var histories = from h in _context.Histories
                         select h;
@@ -23,6 +29,11 @@ public class HistoryController : Controller
         if (!String.IsNullOrEmpty(searchString))
         {
             histories = histories.Where(h => h.ProductName.Contains(searchString));
+        }
+
+        if (!String.IsNullOrEmpty(actionFilter))
+        {
+            histories = histories.Where(h => h.Action == actionFilter);
         }
 
         switch (sortOrder)
@@ -44,4 +55,5 @@ public class HistoryController : Controller
         int pageSize = 10;
         return View(await PaginatedList<History>.CreateAsync(histories.AsNoTracking(), pageNumber ?? 1, pageSize));
     }
+
 }

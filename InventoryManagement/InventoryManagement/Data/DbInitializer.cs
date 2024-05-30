@@ -427,7 +427,7 @@ namespace InventoryManagement.Data
     new History
     {
         ProductName = "Gỗ Sồi",
-        Action = "Nhập Kho",
+        Action = "Nhập Hàng",
         Date = DateTime.Now,
         Quantity = 100,
         SupplierName = "Công ty TNHH 1 thành viên MCK",
