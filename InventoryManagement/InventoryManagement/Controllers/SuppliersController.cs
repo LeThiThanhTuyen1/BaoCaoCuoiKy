@@ -20,9 +20,29 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Suppliers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            return View(await _context.Suppliers.ToListAsync());
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["CurrentFilter"] = searchString;
+            var suppliers = from s in _context.Suppliers
+                            select s;
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                suppliers = suppliers.Where(s => s.Name.Contains(searchString)
+                                               || s.Address.Contains(searchString)
+                                               || s.Contact.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    suppliers = suppliers.OrderByDescending(s => s.Name);
+                    break;
+                default:
+                    suppliers = suppliers.OrderBy(s => s.Name);
+                    break;
+            }
+            return View(await suppliers.ToListAsync());
         }
 
         // GET: Suppliers/Details/5

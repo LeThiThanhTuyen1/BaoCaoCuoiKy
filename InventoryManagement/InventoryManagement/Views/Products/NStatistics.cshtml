@@ -1,0 +1,52 @@
+﻿@model InventoryManagement.Models.StatisticsViewModel
+
+@{
+    ViewData["Title"] = "Thống kê sản phẩm";
+}
+
+<head>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+
+<h1>Thống kê sản phẩm</h1>
+
+<form method="get" asp-action="NStatistics">
+    <div class="form-group">
+        <label for="startDate">Ngày bắt đầu:</label>
+        <input type="date" id="startDate" name="startDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="endDate">Ngày kết thúc:</label>
+        <input type="date" id="endDate" name="endDate" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Thống kê</button>
+</form>
+
+@* <h3>Giá trị hàng tồn kho: @Model.TotalInventoryValue VND</h3> *@
+<h3>Tổng số lượng hàng nhập kho trong khoảng thời gian: @Model.TotalQuantityImported</h3>
+<h3>Tổng giá trị hàng nhập kho trong khoảng thời gian: @Model.TotalValueImported VND</h3>
+
+<h3>Chi tiết các giao dịch nhập kho:</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Ngày nhập</th>
+            <th>Số lượng</th>
+            <th>Nhà cung cấp</th>
+            <th>Kho</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Histories)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.Date.ToString("dd/MM/yyyy")</td>
+                <td>@item.Quantity</td>
+                <td>@item.SupplierName</td>
+                <td>@item.WarehouseName</td>
+            </tr>
+        }
+    </tbody>
+</table>
