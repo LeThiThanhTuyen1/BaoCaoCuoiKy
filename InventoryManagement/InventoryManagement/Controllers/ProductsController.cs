@@ -285,7 +285,6 @@ namespace InventoryManagement.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         // POST: Products/Export
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -299,10 +298,14 @@ namespace InventoryManagement.Controllers
 
             if (ExportQuantity > product.Quantity)
             {
-                TempData["Message"] = "Vượt quá số lượng Hàng có trong kho.";
+                TempData["Message"] = "Vượt quá số lượng hàng có trong kho.";
             }
             else
             {
+                // Log initial quantity before export
+                int initialQuantity = product.Quantity;
+
+                // Update product quantity
                 product.Quantity -= ExportQuantity;
                 _context.Update(product);
                 await _context.SaveChangesAsync();
@@ -313,10 +316,10 @@ namespace InventoryManagement.Controllers
                 var history = new History
                 {
                     ProductName = product.Name,
-                    Action = "Xuất Kho",
+                    Action = "Xuất Hàng",
                     Date = DateTime.Now,
-                    Quantitybegin = product.Quantity,
-                    Quantity = ExportQuantity,
+                    Quantitybegin = initialQuantity,
+                    Quantity = ExportQuantity, // This is the quantity being exported
                     SupplierName = supplier.Name,
                     WarehouseName = warehouse.Name
                 };
@@ -329,6 +332,7 @@ namespace InventoryManagement.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
 
         private bool ProductExists(int id)
         {

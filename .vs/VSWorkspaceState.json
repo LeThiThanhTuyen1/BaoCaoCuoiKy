@@ -9,6 +9,6 @@
     "\\InventoryManagement\\InventoryManagement\\Views\\Products",
     "\\InventoryManagement\\InventoryManagement\\Views\\Warehouses"
   ],
-  "SelectedNode": "\\InventoryManagement\\InventoryManagement\\Views\\Products\\SupplierProducts.cshtml",
+  "SelectedNode": "\\InventoryManagement\\InventoryManagement\\Controllers\\ProductsController.cs",
   "PreviewInSolutionExplorer": false
 }

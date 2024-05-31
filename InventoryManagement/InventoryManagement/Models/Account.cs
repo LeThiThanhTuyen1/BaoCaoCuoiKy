@@ -9,11 +9,13 @@ namespace InventoryManagement.Models
     {
         public int AccountId { get; set; }
 
-        [Required]
+
+     
+        [Required(ErrorMessage = "Tên không được để trống.")]
         [Display(Name = "Tên tài khoản")]
         public string? Username { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Mật Khẩu không được để trống.")]
         [Display(Name = "Mật Khẩu")]
         public string? Password { get; set; }
 
@@ -26,3 +28,4 @@ namespace InventoryManagement.Models
         public string? Role { get; set; } // Admin or Manager
     }
 }
+
