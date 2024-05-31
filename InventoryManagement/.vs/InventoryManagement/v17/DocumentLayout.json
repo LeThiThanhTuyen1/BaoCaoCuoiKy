@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\QuanLyKho\\InventoryManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|d:\\quanlykho\\inventorymanagement\\inventorymanagement\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|d:\\quanlykho\\inventorymanagement\\inventorymanagement\\views\\accounts\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\accounts\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|d:\\quanlykho\\inventorymanagement\\inventorymanagement\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|d:\\quanlykho\\inventorymanagement\\inventorymanagement\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|d:\\quanlykho\\inventorymanagement\\inventorymanagement\\views\\accounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -284,7 +284,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 286,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -308,13 +308,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\Views\\History\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\History\\Index.cshtml",
               "ToolTip": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\Views\\History\\Index.cshtml",
               "RelativeToolTip": "InventoryManagement\\Views\\History\\Index.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-30T09:15:28.923Z",
               "EditorCaption": ""
@@ -329,8 +329,7 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Accounts\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T12:08:23.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T12:08:23.426Z"
             },
             {
               "$type": "Document",
@@ -342,12 +341,11 @@
               "RelativeToolTip": "InventoryManagement\\Models\\Account.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAcwBYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T14:12:56.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T14:12:56.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Data\\DbInitializer.cs",
@@ -355,12 +353,11 @@
               "RelativeToolTip": "InventoryManagement\\Data\\DbInitializer.cs",
               "ViewState": "AQIAAKEBAAAAAAAAAAAAAKwBAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T06:33:57.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T06:33:57.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\QuanLyKho\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Login.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Login.cshtml",
@@ -381,8 +378,7 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\ProductsController.cs",
               "ViewState": "AQIAAGgBAAAAAAAAAAAUwJoBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:30:25.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T09:30:25.301Z"
             },
             {
               "$type": "Document",
@@ -394,8 +390,7 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\AccountsController.cs",
               "ViewState": "AQIAABwBAAAAAAAAAAAcwDQBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T06:41:59.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T06:41:59.116Z"
             },
             {
               "$type": "Document",
