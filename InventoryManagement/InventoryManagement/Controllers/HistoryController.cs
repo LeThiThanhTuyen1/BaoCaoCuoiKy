@@ -1,8 +1,11 @@
 ﻿using InventoryManagement.Models;
-using InventoryManagement;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using InventoryManagement;
 
 public class HistoryController : Controller
 {
@@ -48,12 +51,11 @@ public class HistoryController : Controller
                 histories = histories.OrderByDescending(h => h.Date);
                 break;
             default:
-                histories = histories.OrderBy(h => h.ProductName);
+                histories = histories.OrderByDescending(h => h.Date); // Default to sorting by date descending
                 break;
         }
 
-        int pageSize = 10;
+        int pageSize = 5; // Set the page size to 5
         return View(await PaginatedList<History>.CreateAsync(histories.AsNoTracking(), pageNumber ?? 1, pageSize));
     }
-
 }

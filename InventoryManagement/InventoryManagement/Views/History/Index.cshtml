@@ -35,8 +35,8 @@
             <th>Tên Sản Phẩm</th>
             <th>Nhập/Xuất</th>
             <th>Ngày</th>
-            <th> Số Lượng Hàng Ban Đầu</th>
-            <th>Số lượng </th>
+            <th>Số Lượng Hàng Ban Đầu</th>
+            <th>Số lượng</th>
             <th>Nhà Cung Cấp</th>
             <th>Kho</th>
         </tr>
@@ -56,34 +56,20 @@
         }
     </tbody>
 </table>
-@{
-    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
-    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
-}
 
-<a asp-action="Index"
-   asp-route-pageNumber="@(Model.PageIndex - 1)"
-   asp-route-currentFilter="@ViewData["CurrentFilter"]"
-   asp-route-actionFilter="@ViewData["CurrentActionFilter"]"
-   class="btn btn-default @prevDisabled">
-    Trước
-</a>
-<a asp-action="Index"
-   asp-route-pageNumber="@(Model.PageIndex + 1)"
-   asp-route-currentFilter="@ViewData["CurrentFilter"]"
-   asp-route-actionFilter="@ViewData["CurrentActionFilter"]"
-   class="btn btn-default @nextDisabled">
-    Tiếp
-</a>
-
-@section Scripts {
-    <script>
-        // Tự động ẩn thông báo sau 5 giây
-        setTimeout(function () {
-            var tempMessage = document.getElementById('tempMessage');
-            if (tempMessage) {
-                tempMessage.style.display = 'none';
-            }
-        }, 5000);
-    </script>
-}
+<div>
+    <a asp-action="Index"
+       asp-route-pageNumber="@(Model.PageIndex - 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-actionFilter="@ViewData["CurrentActionFilter"]"
+       class="btn btn-default @(Model.HasPreviousPage ? "" : "disabled")">
+        Trước
+    </a>
+    <a asp-action="Index"
+       asp-route-pageNumber="@(Model.PageIndex + 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-actionFilter="@ViewData["CurrentActionFilter"]"
+       class="btn btn-default @(Model.HasNextPage ? "" : "disabled")">
+        Tiếp
+    </a>
+</div>

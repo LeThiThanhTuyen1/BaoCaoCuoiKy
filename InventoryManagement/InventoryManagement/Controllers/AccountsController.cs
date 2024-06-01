@@ -207,7 +207,6 @@ namespace InventoryManagement.Controllers
 
         // GET: Accounts/Edit/5
         [Authorize(Roles = "Admin")]
-        // GET: Accounts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -262,10 +261,11 @@ namespace InventoryManagement.Controllers
             ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Name", account.ManagerId);
             return View(account);
         }
-        // GET: Accounts/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+
+      
         [Authorize(Roles = "Admin")]
+        // GET: Accounts/Delete/5
+        [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -284,10 +284,10 @@ namespace InventoryManagement.Controllers
             return View(account);
         }
 
-        // POST: Accounts/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
+        // POST: Accounts/Delete/5
+        [HttpPost, ActionName("DeleteConfirmed")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var account = await _context.Accounts.FindAsync(id);
@@ -298,15 +298,13 @@ namespace InventoryManagement.Controllers
                 TempData["SuccessMessage"] = "Xóa tài khoản thành công!";
             }
 
-            //await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
 
         private bool AccountExists(int id)
         {
             return _context.Accounts.Any(e => e.AccountId == id);
         }
+
     }
 }
-

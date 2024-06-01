@@ -12,7 +12,7 @@ public class InventoryContext : DbContext
     public DbSet<Account> Accounts { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Supplier> Suppliers { get; set; }
-    public DbSet<History> Histories { get; set; } // Add this line
+    public DbSet<History> Histories { get; set; } 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -40,7 +40,6 @@ public class InventoryContext : DbContext
             .Property(p => p.Price)
             .HasColumnType("decimal(18,2)");
 
-        // Configure the History entity
         modelBuilder.Entity<History>()
             .Property(h => h.ProductName)
             .IsRequired()
