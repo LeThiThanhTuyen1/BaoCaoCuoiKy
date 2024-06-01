@@ -1,31 +1,31 @@
 ﻿@model Supplier
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "CHI TIẾT NHÀ CUNG CẤP";
 }
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Details</h1>
+<h1>Xem Chi Tiết</h1>
 
 <div>
-    <h4>Supplier</h4>
+    <h4>Nhà Cung Cấp</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            Tên
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Address)
+            Địa chỉ
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Address)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Contact)
+            Liên hệ
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Contact)
@@ -33,6 +33,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.SupplierId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.SupplierId">Sửa</a> |
+    <a asp-action="Index">Trở về</a>
 </div>

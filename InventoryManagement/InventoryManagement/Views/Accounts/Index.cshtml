@@ -3,20 +3,28 @@
 @{
     ViewData["Title"] = "Index";
 }
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="success-message" class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Danh sách tài khoản</h1>
 
+<h1>Danh sách tài khoản</h1>
 <p>
     <a asp-action="Create">Tạo mới</a>
 </p>
+
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
         <p>
             Tìm kiếm tài khoản <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên tài khoản" />
             Vai Trò: @Html.DropDownList("roleFilter", (SelectList)ViewData["RoleList"], "Tất Cả")
-
             <input type="submit" value="Tìm" class="btn btn-default" /> |
             <a asp-action="Index">Quay lại danh sách đầy đủ</a>
         </p>
@@ -80,3 +88,14 @@
    class="btn btn-default @nextDisabled">
     Tiếp
 </a>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var successMessage = document.getElementById("success-message");
+        if (successMessage) {
+            setTimeout(function () {
+                successMessage.style.display = 'none';
+            }, 5000);
+        }
+    });
+</script>

@@ -299,10 +299,14 @@ namespace InventoryManagement.Controllers
 
             if (ExportQuantity > product.Quantity)
             {
-                TempData["Message"] = "Vượt quá số lượng Hàng có trong kho.";
+                TempData["Message"] = "Vượt quá số lượng hàng có trong kho.";
             }
             else
             {
+                // Log initial quantity before export
+                int initialQuantity = product.Quantity;
+
+                // Update product quantity
                 product.Quantity -= ExportQuantity;
                 _context.Update(product);
                 await _context.SaveChangesAsync();
@@ -313,9 +317,9 @@ namespace InventoryManagement.Controllers
                 var history = new History
                 {
                     ProductName = product.Name,
-                    Action = "Xuất Kho",
+                    Action = "Xuất Hàng",
                     Date = DateTime.Now,
-                    Quantitybegin = product.Quantity,
+                    Quantitybegin = initialQuantity,
                     Quantity = ExportQuantity,
                     SupplierName = supplier.Name,
                     WarehouseName = warehouse.Name
@@ -402,5 +406,82 @@ namespace InventoryManagement.Controllers
 
             return View(supplierProducts.ToList());
         }
+
+        public async Task<IActionResult> NStatistics(DateTime? startDate, DateTime? endDate)
+        {
+            // Kiểm tra và gán giá trị mặc định cho khoảng thời gian nếu không có giá trị
+            startDate ??= DateTime.MinValue;
+            endDate ??= DateTime.MaxValue;
+
+            // Lấy tổng giá trị hàng tồn kho
+            var totalInventoryValue = await _context.Products.SumAsync(p => p.Quantity * p.Price);
+
+            // Lấy tổng số lượng và giá trị hàng nhập kho trong khoảng thời gian cụ thể
+            var importTransactions = await _context.Histories
+                .Where(h => h.Action == "Nhập Hàng" && h.Date >= startDate && h.Date <= endDate)
+                .ToListAsync();
+
+            var totalQuantityImported = importTransactions.Sum(h => h.Quantity);
+            var totalValueImported = 0m;
+
+            // Tính tổng giá trị nhập kho
+            foreach (var transaction in importTransactions)
+            {
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.Name == transaction.ProductName);
+                if (product != null)
+                {
+                    totalValueImported += transaction.Quantity * product.Price;
+                }
+            }
+
+            // Tạo view model và gán giá trị
+            var viewModel = new StatisticsViewModel
+            {
+                TotalInventoryValue = totalInventoryValue,
+                TotalQuantityImported = totalQuantityImported,
+                TotalValueImported = totalValueImported,
+                Histories = importTransactions
+            };
+
+            // Truyền view model vào view
+            return View(viewModel);
+        }
+
+        public async Task<IActionResult> XStatistics(DateTime? startDate, DateTime? endDate)
+        {
+            // Kiểm tra và gán giá trị mặc định cho khoảng thời gian nếu không có giá trị
+            startDate ??= DateTime.MinValue;
+            endDate ??= DateTime.MaxValue;
+
+            // Lấy tổng số lượng và giá trị hàng xuất kho trong khoảng thời gian cụ thể
+            var exportTransactions = await _context.Histories
+                .Where(h => h.Action == "Xuất Kho" && h.Date >= startDate && h.Date <= endDate)
+                .ToListAsync();
+
+            var totalQuantityExported = exportTransactions.Sum(h => h.Quantity);
+            var totalValueExported = 0m;
+
+            // Tính tổng giá trị xuất kho
+            foreach (var transaction in exportTransactions)
+            {
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.Name == transaction.ProductName);
+                if (product != null)
+                {
+                    totalValueExported += transaction.Quantity * product.Price;
+                }
+            }
+
+            // Tạo view model và gán giá trị
+            var viewModel = new StatisticsViewModel
+            {
+                TotalQuantityExported = totalQuantityExported,
+                TotalValueExported = totalValueExported,
+                Histories = exportTransactions
+            };
+
+            // Truyền view model vào view
+            return View(viewModel);
+        }
+
     }
 }

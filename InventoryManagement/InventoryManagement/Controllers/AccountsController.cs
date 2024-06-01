@@ -198,6 +198,7 @@ namespace InventoryManagement.Controllers
             {
                 _context.Add(account);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Tạo mới tài khoản thành công!";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ManagerId"] = new SelectList(_context.Managers, "ManagerId", "Name", account.ManagerId);
@@ -243,6 +244,7 @@ namespace InventoryManagement.Controllers
                 {
                     _context.Update(account);
                     await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Chỉnh sửa tài khoản thành công!";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -261,6 +263,8 @@ namespace InventoryManagement.Controllers
             return View(account);
         }
         // GET: Accounts/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -291,9 +295,11 @@ namespace InventoryManagement.Controllers
             if (account != null)
             {
                 _context.Accounts.Remove(account);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Xóa tài khoản thành công!";
             }
 
-            await _context.SaveChangesAsync();
+            //await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

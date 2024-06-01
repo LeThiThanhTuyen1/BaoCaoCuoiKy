@@ -106,12 +106,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/NStatistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcTlN0YXRpc3RpY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/Statistics.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU3RhdGlzdGljcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/SupplierProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU3VwcGxpZXJQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Products/XStatistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcWFN0YXRpc3RpY3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/FPT/source/repos/BaoCaoCuoiKy/InventoryManagement/InventoryManagement/Views/Shared/Error.cshtml]
