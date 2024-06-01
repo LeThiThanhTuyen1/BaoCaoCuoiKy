@@ -177,7 +177,7 @@ namespace InventoryManagement.Controllers
                 var history = new History
                 {
                     ProductName = product.Name,
-                    Action = " Nhập Hàng ",
+                    Action = "Nhập Hàng",
                     Date = DateTime.Now,
                     Quantitybegin = 0,
                     Quantity = product.Quantity,
@@ -453,7 +453,7 @@ namespace InventoryManagement.Controllers
 
             // Lấy tổng số lượng và giá trị hàng xuất kho trong khoảng thời gian cụ thể
             var exportTransactions = await _context.Histories
-                .Where(h => h.Action == "Xuất Kho" && h.Date >= startDate && h.Date <= endDate)
+                .Where(h => h.Action == "Xuất Hàng" && h.Date >= startDate && h.Date <= endDate)
                 .ToListAsync();
 
             var totalQuantityExported = exportTransactions.Sum(h => h.Quantity);
