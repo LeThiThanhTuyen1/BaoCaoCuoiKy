@@ -262,10 +262,8 @@ namespace InventoryManagement.Controllers
             return View(account);
         }
 
-      
-        [Authorize(Roles = "Admin")]
         // GET: Accounts/Delete/5
-        [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -284,9 +282,9 @@ namespace InventoryManagement.Controllers
             return View(account);
         }
 
+        // GET: Accounts/Delete/5
         [Authorize(Roles = "Admin")]
-        // POST: Accounts/Delete/5
-        [HttpPost, ActionName("DeleteConfirmed")]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -294,13 +292,14 @@ namespace InventoryManagement.Controllers
             if (account != null)
             {
                 _context.Accounts.Remove(account);
-                await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Xóa tài khoản thành công!";
             }
-
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
+
+        [Authorize(Roles = "Admin")]
         private bool AccountExists(int id)
         {
             return _context.Accounts.Any(e => e.AccountId == id);
