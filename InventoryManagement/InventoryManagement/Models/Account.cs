@@ -26,3 +26,4 @@ namespace InventoryManagement.Models
         public string? Role { get; set; } // Admin or Manager
     }
 }
+

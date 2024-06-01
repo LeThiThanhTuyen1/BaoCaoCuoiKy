@@ -296,7 +296,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 286,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -337,7 +337,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Supplier.cs",
+              "ToolTip": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Models\\Supplier.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\Supplier.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T14:14:44.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "XStatistics.cshtml",
+              "DocumentMoniker": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "ToolTip": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T08:34:10.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StatisticsViewModel.cs",
+              "DocumentMoniker": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Models\\StatisticsViewModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\StatisticsViewModel.cs",
+              "ToolTip": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Models\\StatisticsViewModel.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\StatisticsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T08:30:23.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Statistics.cshtml",
+              "DocumentMoniker": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "ToolTip": "D:\\Dotnet\\BCCK\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T06:09:16.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Suppliers\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Suppliers\\Index.cshtml",
@@ -1045,7 +1097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 51,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Shared\\_ValidationScriptsPartial.cshtml",

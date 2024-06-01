@@ -288,7 +288,6 @@ namespace InventoryManagement.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-       
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var account = await _context.Accounts.FindAsync(id);
@@ -303,9 +302,11 @@ namespace InventoryManagement.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+
         private bool AccountExists(int id)
         {
             return _context.Accounts.Any(e => e.AccountId == id);
         }
     }
 }
+

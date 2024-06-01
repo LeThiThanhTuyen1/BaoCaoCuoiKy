@@ -422,6 +422,10 @@ namespace InventoryManagement.Data
                 context.Products.Add(product);
             }
             context.SaveChanges();
+<<<<<<< HEAD
+=======
+        
+>>>>>>> d4cbb67b54dfcdf5b6953246ea98dcd912039e2a
         }
     }
 }

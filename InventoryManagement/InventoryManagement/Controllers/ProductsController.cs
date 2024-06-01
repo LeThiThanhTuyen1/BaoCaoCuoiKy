@@ -23,18 +23,9 @@ namespace InventoryManagement.Controllers
             string searchString,
             string sortOrder,
             string currentFilter,
-            int? pageNumber,
-            string warehouseID)
+            int? pageNumber
+            )
         {
-            // Chuẩn bị danh sách kho cho dropdown
-            var warehouses = await _context.Warehouses.Select(w => new SelectListItem
-            {
-                Value = w.WarehouseID.ToString(),
-                Text = w.Name
-            }).ToListAsync();
-            ViewData["WarehouseList"] = new SelectList(warehouses, "Value", "Text");
-
-            // Xử lý tìm kiếm và bộ lọc hiện tại
             if (searchString != null)
             {
                 pageNumber = 1;
@@ -50,27 +41,17 @@ namespace InventoryManagement.Controllers
             ViewData["SupplierSortParm"] = String.IsNullOrEmpty(sortOrder) ? "supplier_desc" : "";
             ViewData["CurrentSort"] = sortOrder;
 
-            // Truy vấn sản phẩm
             var products = from p in _context.Products
                             .Include(p => p.Supplier)
                             .Include(p => p.Warehouse)
                            select p;
             products = products.Where(p => p.Quantity > 0);
 
-            // Lọc theo chuỗi tìm kiếm
             if (!String.IsNullOrEmpty(searchString))
             {
                 products = products.Where(s => s.Name.Contains(searchString));
             }
 
-            // Lọc theo kho
-            if (!string.IsNullOrEmpty(warehouseID))
-            {
-                int warehouseId = int.Parse(warehouseID);
-                products = products.Where(p => p.WarehouseID == warehouseId);
-            }
-
-            // Logic sắp xếp
             switch (sortOrder)
             {
                 case "name_desc":
@@ -93,13 +74,91 @@ namespace InventoryManagement.Controllers
                     break;
             }
 
-            // Thiết lập WarehouseID trong ViewData để truyền vào view
-            ViewData["WarehouseID"] = warehouseID;
 
-            // Phân trang
             int pageSize = 5;
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
+
+        public async Task<IActionResult> NStatistics(DateTime? startDate, DateTime? endDate)
+        {
+            // Kiểm tra và gán giá trị mặc định cho khoảng thời gian nếu không có giá trị
+            startDate ??= DateTime.MinValue;
+            endDate ??= DateTime.MaxValue;
+
+            // Lấy tổng giá trị hàng tồn kho
+            var totalInventoryValue = await _context.Products.SumAsync(p => p.Quantity * p.Price);
+
+            // Lấy tổng số lượng và giá trị hàng nhập kho trong khoảng thời gian cụ thể
+            var importTransactions = await _context.Histories
+                .Where(h => h.Action == "Nhập Hàng" && h.Date >= startDate && h.Date <= endDate)
+                .ToListAsync();
+
+            var totalQuantityImported = importTransactions.Sum(h => h.Quantity);
+            var totalValueImported = 0m;
+
+            // Tính tổng giá trị nhập kho
+            foreach (var transaction in importTransactions)
+            {
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.Name == transaction.ProductName);
+                if (product != null)
+                {
+                    totalValueImported += transaction.Quantity * product.Price;
+                }
+            }
+
+            // Tạo view model và gán giá trị
+            var viewModel = new StatisticsViewModel
+            {
+                TotalInventoryValue = totalInventoryValue,
+                TotalQuantityImported = totalQuantityImported,
+                TotalValueImported = totalValueImported,
+                Histories = importTransactions
+            };
+
+            // Truyền view model vào view
+            return View(viewModel);
+        }
+
+        public async Task<IActionResult> XStatistics(DateTime? startDate, DateTime? endDate)
+        {
+            // Kiểm tra và gán giá trị mặc định cho khoảng thời gian nếu không có giá trị
+            startDate ??= DateTime.MinValue;
+            endDate ??= DateTime.MaxValue;
+
+            // Lấy tổng số lượng và giá trị hàng xuất kho trong khoảng thời gian cụ thể
+            var exportTransactions = await _context.Histories
+                .Where(h => h.Action == "Xuất Kho" && h.Date >= startDate && h.Date <= endDate)
+                .ToListAsync();
+
+            var totalQuantityExported = exportTransactions.Sum(h => h.Quantity);
+            var totalValueExported = 0m;
+
+            // Tính tổng giá trị xuất kho
+            foreach (var transaction in exportTransactions)
+            {
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.Name == transaction.ProductName);
+                if (product != null)
+                {
+                    totalValueExported += transaction.Quantity * product.Price;
+                }
+            }
+
+            // Tạo view model và gán giá trị
+            var viewModel = new StatisticsViewModel
+            {
+                TotalQuantityExported = totalQuantityExported,
+                TotalValueExported = totalValueExported,
+                Histories = exportTransactions
+            };
+
+            // Truyền view model vào view
+            return View(viewModel);
+        }
+
+        
+
+
+
 
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -150,7 +209,7 @@ namespace InventoryManagement.Controllers
         // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-
+     
         // POST: Products/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -159,7 +218,6 @@ namespace InventoryManagement.Controllers
             if (ModelState.IsValid)
             {
                 var existingProduct = await FindProductByNameAndSupplierAsync(product.Name, product.SupplierId);
-
                 if (existingProduct != null)
                 {
                     existingProduct.Quantity += product.Quantity;
@@ -340,35 +398,14 @@ namespace InventoryManagement.Controllers
         }
 
         //Thống kê từng nhà cung cấp còn lại bao nhiêu sản phẩm 
-        public IActionResult Statistics(string sortOrder)
+        public IActionResult Statistics()
         {
-            // Lấy tổng giá trị hàng tồn kho
             var totalInventoryValue = _context.Products.Sum(p => p.Quantity * p.Price);
 
-            // Lấy thông tin tồn kho theo nhà cung cấp
             var supplierInventory = _context.Products
                 .GroupBy(p => p.Supplier.Name)
-                .Select(g => new { SupplierName = g.Key, TotalQuantity = g.Sum(p => p.Quantity) });
-
-            // Thêm sắp xếp
-            ViewData["SupplierNameSortParam"] = String.IsNullOrEmpty(sortOrder) || sortOrder != "name_desc" ? "name_desc" : "";
-            ViewData["QuantitySortParam"] = sortOrder == "quantity_desc" ? "quantity_asc" : "quantity_desc";
-
-            switch (sortOrder)
-            {
-                case "name_desc":
-                    supplierInventory = supplierInventory.OrderByDescending(g => g.SupplierName);
-                    break;
-                case "quantity_desc":
-                    supplierInventory = supplierInventory.OrderByDescending(g => g.TotalQuantity);
-                    break;
-                case "quantity_asc":
-                    supplierInventory = supplierInventory.OrderBy(g => g.TotalQuantity);
-                    break;
-                default:
-                    supplierInventory = supplierInventory.OrderBy(g => g.SupplierName);
-                    break;
-            }
+                .Select(g => new { SupplierName = g.Key, TotalQuantity = g.Sum(p => p.Quantity) })
+                .ToList();
 
             ViewData["TotalInventoryValue"] = totalInventoryValue;
             ViewData["SupplierInventory"] = supplierInventory;
@@ -377,34 +414,15 @@ namespace InventoryManagement.Controllers
         }
 
         //Xem số lượng sản phẩm còn lại của từng nhà cung cấp
-        public IActionResult SupplierProducts(string supplierName, string sortOrder)
+        public IActionResult SupplierProducts(string supplierName)
         {
             var supplierProducts = _context.Products
                 .Where(p => p.Supplier.Name == supplierName)
-                .Select(p => new { ProductName = p.Name, Quantity = p.Quantity });
+                .Select(p => new { ProductName = p.Name, Quantity = p.Quantity })
+                .ToList();
 
             ViewData["SupplierName"] = supplierName;
-
-            ViewData["ProductNameSortParam"] = String.IsNullOrEmpty(sortOrder) || sortOrder != "name_desc" ? "name_desc" : "";
-            ViewData["QuantitySortParam"] = sortOrder == "quantity_desc" ? "quantity_asc" : "quantity_desc";
-
-            switch (sortOrder)
-            {
-                case "name_desc":
-                    supplierProducts = supplierProducts.OrderByDescending(p => p.ProductName);
-                    break;
-                case "quantity_desc":
-                    supplierProducts = supplierProducts.OrderByDescending(p => p.Quantity);
-                    break;
-                case "quantity_asc":
-                    supplierProducts = supplierProducts.OrderBy(p => p.Quantity);
-                    break;
-                default:
-                    supplierProducts = supplierProducts.OrderBy(p => p.ProductName);
-                    break;
-            }
-
-            return View(supplierProducts.ToList());
+            return View(supplierProducts);
         }
 
         public async Task<IActionResult> NStatistics(DateTime? startDate, DateTime? endDate)
