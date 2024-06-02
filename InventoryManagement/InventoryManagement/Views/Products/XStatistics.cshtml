@@ -5,10 +5,27 @@
 }
 
 <head>
+    <link href="~/css/style-statics.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
 
 <h1>Thống kê xuất kho</h1>
+
+<div class="stats-container">
+    <div class="stat-item">
+        <div class="stat-box stat-box-quantity">
+            <h2>@Model.TotalQuantityExported</h2>
+        </div>
+        <div class="stat-title">Tổng số lượng hàng xuất kho</div>
+    </div>
+
+    <div class="stat-item">
+        <div class="stat-box stat-box-value">
+            <h2>@Model.TotalValueExported VND</h2>
+        </div>
+        <div class="stat-title">Tổng giá trị hàng xuất kho</div>
+    </div>
+</div>
 
 <form method="get" asp-action="XStatistics">
     <div class="form-group">
@@ -21,12 +38,9 @@
     </div>
     <button type="submit" class="btn btn-primary">Thống kê</button>
 </form>
-
-<h3>Tổng số lượng hàng xuất kho trong khoảng thời gian: @Model.TotalQuantityExported</h3>
-<h3>Tổng giá trị hàng xuất kho trong khoảng thời gian: @Model.TotalValueExported VND</h3>
-
-<h3>Chi tiết các giao dịch xuất kho:</h3>
+<br>
 <table class="table">
+    <h3>Chi tiết các giao dịch xuất kho:</h3>
     <thead>
         <tr>
             <th>Tên sản phẩm</th>

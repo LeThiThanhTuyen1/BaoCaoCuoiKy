@@ -1,0 +1,68 @@
+﻿/* Style for the statistics container */
+.stats-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    margin: 20px 0;
+    width: 100%; /* Full width */
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: row; /* Align title next to square */
+    align-items: center;
+    flex: 1; /* Equal width for both items */
+    justify-content: center; /* Center content within each item */
+    margin: 0 10px; /* Margin between items */
+}
+
+.stat-box {
+    padding: 20px; /* Padding inside the square */
+    text-align: center;
+    width: 150px; /* Width of the square */
+    height: 80px; /* Height of the square */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: yellow; /* Text color */
+}
+
+    .stat-box h2 {
+        margin: 0;
+        font-size: 1.5em; /* Font size */
+        font-weight: bold; /* Bold font */
+    }
+
+.stat-title {
+    margin-left: 20px; /* Space between square and title */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Colors */
+.stat-box-quantity {
+    background-color: red; /* Background color for quantity */
+}
+
+.stat-box-value {
+    background-color: blue; /* Background color for value */
+}
+
+/* Style for the form and table */
+.form-group {
+    margin-bottom: 15px;
+    display: inline-block; /* Display inputs in a line */
+}
+
+    .form-group label {
+        margin-right: 20px; /* Margin between label and input */
+    }
+
+    .form-group input[type="date"] {
+        width: 200px; /* Reduce input width */
+    }
+
+.table {
+    margin-top: 20px;
+}

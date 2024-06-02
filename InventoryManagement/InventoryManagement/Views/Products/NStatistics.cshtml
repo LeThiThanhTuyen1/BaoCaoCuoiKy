@@ -5,10 +5,27 @@
 }
 
 <head>
+    <link href="~/css/style-statics.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
 
 <h1>Thống kê sản phẩm</h1>
+
+<div class="stats-container">
+    <div class="stat-item">
+        <div class="stat-box stat-box-quantity">
+            <h2>@Model.TotalQuantityImported</h2>
+        </div>
+        <div class="stat-title">Tổng số lượng hàng nhập kho</div>
+    </div>
+
+    <div class="stat-item">
+        <div class="stat-box stat-box-value">
+            <h2>@Model.TotalValueImported VND</h2>
+        </div>
+        <div class="stat-title">Tổng giá trị hàng nhập kho</div>
+    </div>
+</div>
 
 <form method="get" asp-action="NStatistics">
     <div class="form-group">
@@ -21,11 +38,7 @@
     </div>
     <button type="submit" class="btn btn-primary">Thống kê</button>
 </form>
-
-@* <h3>Giá trị hàng tồn kho: @Model.TotalInventoryValue VND</h3> *@
-<h3>Tổng số lượng hàng nhập kho trong khoảng thời gian: @Model.TotalQuantityImported</h3>
-<h3>Tổng giá trị hàng nhập kho trong khoảng thời gian: @Model.TotalValueImported VND</h3>
-
+<br />
 <h3>Chi tiết các giao dịch nhập kho:</h3>
 <table class="table">
     <thead>
