@@ -99,6 +99,19 @@ namespace InventoryManagement.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Check if the location or name already exists
+                if (_context.Warehouses.Any(w => w.Location == warehouse.Location))
+                {
+                    ModelState.AddModelError("Location", "Địa chỉ đã tồn tại. Làm ơn hãy chọn thêm địa chỉ khác.");
+                    return View(warehouse);
+                }
+
+                if (_context.Warehouses.Any(w => w.Name == warehouse.Name))
+                {
+                    ModelState.AddModelError("Name", "Tên kho đã tồn tại.");
+                    return View(warehouse);
+                }
+
                 _context.Add(warehouse);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -140,6 +153,20 @@ namespace InventoryManagement.Controllers
             {
                 try
                 {
+                    // Check if the new location already exists
+                    if (_context.Warehouses.Any(w => w.Location == warehouse.Location && w.WarehouseID != warehouse.WarehouseID))
+                    {
+                        ModelState.AddModelError("Location", "Địa chỉ đã tồn tại. Làm ơn hãy chọn thêm địa chỉ khác.");
+                        return View(warehouse);
+                    }
+
+                    // Check if the new name already exists
+                    if (_context.Warehouses.Any(w => w.Name == warehouse.Name && w.WarehouseID != warehouse.WarehouseID))
+                    {
+                        ModelState.AddModelError("Name", "Tên kho đã tồn tại.");
+                        return View(warehouse);
+                    }
+
                     _context.Update(warehouse);
                     await _context.SaveChangesAsync();
                 }
