@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\views\\products\\nstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\products\\nstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\views\\products\\xstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\products\\xstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\views\\products\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\products\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -74,20 +86,8 @@
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\views\\products\\xstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\products\\xstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\views\\products\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\products\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\wwwroot\\css\\style-statics.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\wwwroot\\css\\style-statics.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\views\\products\\nstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\products\\nstatistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\fpt\\source\\repos\\baocaocuoiky\\inventorymanagement\\inventorymanagement\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -362,54 +362,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "InventoryManagement\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAcwMsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:30:25.301Z",
+              "DocumentIndex": 2,
+              "Title": "Statistics.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvx0AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T06:09:16.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\History\\Index.cshtml",
-              "RelativeDocumentMoniker": "InventoryManagement\\Views\\History\\Index.cshtml",
-              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\History\\Index.cshtml",
-              "RelativeToolTip": "InventoryManagement\\Views\\History\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowBUAAAAHAAAA",
+              "Title": "NStatistics.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\NStatistics.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\NStatistics.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\NStatistics.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\Products\\NStatistics.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T09:15:28.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WarehousesController.cs",
-              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\WarehousesController.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\WarehousesController.cs",
-              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\WarehousesController.cs",
-              "RelativeToolTip": "InventoryManagement\\Controllers\\WarehousesController.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAswHAAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T10:27:29.802Z",
+              "WhenOpened": "2024-06-01T02:51:56.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "InventoryManagement\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHAAAAAuAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\History\\Index.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\History\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\History\\Index.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\History\\Index.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T02:53:15.015Z",
+              "WhenOpened": "2024-05-30T09:15:28.923Z",
               "EditorCaption": ""
             },
             {
@@ -418,7 +405,56 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XStatistics.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\Products\\XStatistics.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T02:52:53.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WarehousesController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\WarehousesController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\WarehousesController.cs",
+              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\WarehousesController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\WarehousesController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAswHAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T10:27:29.802Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAAAcwMsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:30:25.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T02:53:15.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Index.cshtml",
@@ -426,12 +462,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Index.cshtml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAADYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T15:44:54.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T15:44:54.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Edit.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Edit.cshtml",
@@ -439,12 +474,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Edit.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-27T03:37:18.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T03:37:18.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Details.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Details.cshtml",
@@ -452,12 +486,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Details.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAAcAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-27T03:37:26.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T03:37:26.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Delete.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Delete.cshtml",
@@ -465,12 +498,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Delete.cshtml",
               "ViewState": "AQIAABQAAAAAAAAAAAAwwCwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-28T01:31:17.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T01:31:17.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Create.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Create.cshtml",
@@ -478,12 +510,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Create.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T12:18:14.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T12:18:14.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Index.cshtml",
@@ -491,12 +522,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Products\\Index.cshtml",
               "ViewState": "AQIAAGgAAAAAAAAAAAAowIUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T09:41:40.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T09:41:40.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "SuppliersController.cs",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\SuppliersController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\SuppliersController.cs",
@@ -504,12 +534,11 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\SuppliersController.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAAAMAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T09:01:30.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T09:01:30.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Home\\Index.cshtml",
@@ -521,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "HistoryController.cs",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Controllers\\HistoryController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\HistoryController.cs",
@@ -533,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\FPT\\.nuget\\packages\\epplus\\7.1.3\\readme.txt",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\epplus\\7.1.3\\readme.txt",
@@ -545,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Suppliers\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Suppliers\\Index.cshtml",
@@ -557,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "_LoginLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_LoginLayout.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Shared\\_LoginLayout.cshtml",
@@ -569,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Warehouses\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Warehouses\\Index.cshtml",
@@ -581,19 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "XStatistics.cshtml",
-              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\XStatistics.cshtml",
-              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\XStatistics.cshtml",
-              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\XStatistics.cshtml",
-              "RelativeToolTip": "InventoryManagement\\Views\\Products\\XStatistics.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACoAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T02:52:53.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Suppliers\\Edit.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Suppliers\\Edit.cshtml",
@@ -605,19 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Statistics.cshtml",
-              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\Statistics.cshtml",
-              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
-              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\Statistics.cshtml",
-              "RelativeToolTip": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvx0AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T06:09:16.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "style-statics.css",
               "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\style-statics.css",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\css\\style-statics.css",
@@ -626,18 +631,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-06-02T05:34:35.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "NStatistics.cshtml",
-              "DocumentMoniker": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\NStatistics.cshtml",
-              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\NStatistics.cshtml",
-              "ToolTip": "C:\\Users\\FPT\\source\\repos\\BaoCaoCuoiKy\\InventoryManagement\\InventoryManagement\\Views\\Products\\NStatistics.cshtml",
-              "RelativeToolTip": "InventoryManagement\\Views\\Products\\NStatistics.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T02:51:56.357Z"
             },
             {
               "$type": "Document",
