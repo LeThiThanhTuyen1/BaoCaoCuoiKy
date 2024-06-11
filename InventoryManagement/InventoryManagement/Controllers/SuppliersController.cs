@@ -20,10 +20,23 @@ namespace InventoryManagement.Controllers
         }
 
         // GET: Suppliers
-        public async Task<IActionResult> Index(string sortOrder, string searchString)
+        public async Task<IActionResult> Index(
+            string sortOrder,
+            string currentFilter,
+            string searchString,
+            int? pageNumber)
         {
+            ViewData["CurrentSort"] = sortOrder;
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewData["CurrentFilter"] = searchString;
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
             var suppliers = from s in _context.Suppliers
                             select s;
             if (!string.IsNullOrEmpty(searchString))
@@ -42,7 +55,9 @@ namespace InventoryManagement.Controllers
                     suppliers = suppliers.OrderBy(s => s.Name);
                     break;
             }
-            return View(await suppliers.ToListAsync());
+            int pageSize = 5;
+            return View(await PaginatedList<Supplier>.CreateAsync(suppliers.AsNoTracking(), pageNumber ?? 1, pageSize));
+
         }
 
         // GET: Suppliers/Details/5

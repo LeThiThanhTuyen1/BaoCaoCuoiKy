@@ -6,6 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Models;
+using OfficeOpenXml;
+using System.IO;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace InventoryManagement.Controllers
 {
@@ -496,5 +500,61 @@ namespace InventoryManagement.Controllers
             return View(viewModel);
         }
 
+        public async Task<IActionResult> ExportToExcel()
+        {
+            try
+            {
+                var products = await _context.Products.ToListAsync();
+
+                // Tạo một package Excel
+                ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+                using (var excelPackage = new ExcelPackage())
+                {
+                    // Tạo một sheet mới
+                    var sheet = excelPackage.Workbook.Worksheets.Add("Products");
+
+                    // Đặt tiêu đề cột
+                    sheet.Cells[1, 1].Value = "Mã hàng";
+                    sheet.Cells[1, 2].Value = "Tên hàng";
+                    sheet.Cells[1, 3].Value = "Mô tả";
+                    sheet.Cells[1, 4].Value = "Gía cả";
+                    sheet.Cells[1, 5].Value = "Số lượng";
+                    sheet.Cells[1, 6].Value = "Ngày nhập kho";
+                    // Tiếp tục với các cột khác
+
+                    // Đổ dữ liệu vào từng dòng
+                    int row = 2;
+                    foreach (var product in products)
+                    {
+                        sheet.Cells[row, 1].Value = product.ID;
+                        sheet.Cells[row, 2].Value = product.Name;
+                        sheet.Cells[row, 3].Value = product.Description;
+                        sheet.Cells[row, 4].Value = product.Price;
+                        sheet.Cells[row, 5].Value = product.Quantity;
+                        sheet.Cells[row, 6].Value = product.EntryDate.ToString("yyyy-MM-dd");
+                        // Tiếp tục với các cột khác
+                        row++;
+                    }
+
+                    // Lưu file Excel vào memory stream
+                    using (var stream = new MemoryStream())
+                    {
+                        excelPackage.SaveAs(stream);
+                        var fileBytes = stream.ToArray(); // Chuyển MemoryStream thành mảng byte
+
+                        // Trả về file Excel như một FileResult
+                        return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Products.xlsx");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log lỗi và trả về thông báo lỗi
+                // Ví dụ: sử dụng một logger để log lỗi
+                // _logger.LogError(ex, "Error exporting to Excel");
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }
+

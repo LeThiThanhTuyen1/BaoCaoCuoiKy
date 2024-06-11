@@ -1,16 +1,29 @@
-﻿@model IEnumerable<Supplier>
+﻿@model PaginatedList<InventoryManagement.Models.Supplier>
+@using System.Security.Claims
 
 @{
-    ViewData["Title"] = "DANH SÁCH NHÀ CUNG CẤP";
+    ViewData["Title"] = "Nhà Cung Cấp";
 }
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Danh sách Nhà Cung Cấp</h1>
+<h1>Nhà Cung Cấp</h1>
 
-<p>
-    <a asp-action="Create">Tạo mới</a>
-</p>
+<h4>
+    <p>
+        <a asp-action="Create">Tạo Mới</a>
+    </p>
+</h4>
+<form method="get">
+    <div class="form-actions no-color">
+        <p>
+            Tìm kiếm
+            <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên nhà cung cấp..." />
+            <input type="submit" value="Tìm Kiếm" />
+            <a asp-action="Index">Trở về danh sách đầy đủ</a>
+        </p>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -23,27 +36,63 @@
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-warehouseFilter="@ViewData["CurrentWarehouseFilter"]">Liên Hệ</a>
             </th>
-            <th></th>
+            @{
+                var user = User.Identity;
+                var role = user.IsAuthenticated ? User.FindFirst(ClaimTypes.Role)?.Value : null;
+            }
+            @if (role == "Admin")
+            {
+                <th>Thao tác</th>
+
+            }
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contact)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.SupplierId">Sửa</a> |
-                <a asp-action="Details" asp-route-id="@item.SupplierId">Chi tiết</a> |
-                <a asp-action="Delete" asp-route-id="@item.SupplierId">Xóa</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                @if (role == "Admin")
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.SupplierId">Sửa</a> |
+                        <a asp-action="Details" asp-route-id="@item.SupplierId">Chi Tiết</a> |
+                        <a asp-action="Delete" asp-route-id="@item.SupplierId">Xóa</a>
+                    </td>
+                }
+            </tr>
+        }
     </tbody>
 </table>
+
+<div class="pagination">
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+
+    <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
+       asp-route-pageNumber="@(Model.PageIndex - 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-warehouseFilter="@ViewData["CurrentWarehouseFilter"]"
+       class="btn btn-default @prevDisabled">
+        Trước
+    </a>
+    <a asp-action="Index"
+       asp-route-sortOrder="@ViewData["CurrentSort"]"
+       asp-route-pageNumber="@(Model.PageIndex + 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-warehouseFilter="@ViewData["CurrentWarehouseFilter"]"
+       class="btn btn-default @nextDisabled">
+        Tiếp
+    </a>
+</div>
