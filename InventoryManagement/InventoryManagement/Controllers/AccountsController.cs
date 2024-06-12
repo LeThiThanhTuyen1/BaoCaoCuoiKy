@@ -68,12 +68,13 @@ namespace InventoryManagement.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        // Đăng xuất
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Clear();
-            return RedirectToAction("Login", "Accounts");
+            return RedirectToAction("Index", "Home");
         }
 
         // GET: Accounts
