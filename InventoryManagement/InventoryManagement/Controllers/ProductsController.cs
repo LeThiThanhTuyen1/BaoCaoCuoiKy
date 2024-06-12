@@ -14,7 +14,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
 {
-    [Authorize]
     public class ProductsController : Controller
     {
         private readonly InventoryContext _context;

@@ -7,11 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.Models;
 using InventoryManagement.Data;
-using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
 {
-    [Authorize]
     public class SuppliersController : Controller
     {
         private readonly InventoryContext _context;

@@ -37,23 +37,10 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .main-layout {
-            flex: 1;
-        }
-
-        .custom-container {
-            flex: 1;
-        }
-
-        footer {
-            padding: 1rem 0;
+        .footer {
+            bottom: 0;
             width: 100%;
+            padding: 1rem 0;
             text-align: center;
         }
     </style>
@@ -85,7 +72,7 @@
                                     @if (role == "Admin")
                                     {
                                         <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quản lý tài khoản</a>
+                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý tài khoản</a>
                                             <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                                                 <a class="dropdown-item" asp-area="" asp-controller="Accounts" asp-action="Index">Tài khoản</a>
                                                 <a class="dropdown-item" asp-area="" asp-controller="Managers" asp-action="Index">Người quản lý</a>
@@ -93,7 +80,7 @@
                                         </li>
 
                                         <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quản lý kho</a>
+                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý kho</a>
                                             <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                                                 <a class="dropdown-item" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
                                                 <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Index">Hàng hóa</a>
@@ -102,7 +89,7 @@
                                         </li>
 
                                         <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quản lý hàng hóa</a>
+                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý hàng hóa</a>
                                             <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                                                 <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng hóa</a>
                                                 <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="NStatistics">Thống kê nhập kho</a>
@@ -158,11 +145,7 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Quản lý kho hàng - <a asp-area="" asp-controller="Home" asp-action=""></a>
-        </div>
-    </footer>
+    
     <!-- Javascript files-->
     <script src="~/jon/js/jquery.min.js"></script>
     <script src="~/jon/js/popper.min.js"></script>
@@ -194,4 +177,9 @@
     </script>
     @await RenderSectionAsync("Scripts", required: false);
 </body>
+<footer class="border-top footer text-muted ">
+    <div class="container">
+        &copy; 2024 - Quản lý kho hàng
+    </div>
+</footer>
 </html>
