@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using InventoryManagement;
 using System.IO;
 using OfficeOpenXml;
+
 public class HistoryController : Controller
 {
     private readonly InventoryContext _context;
-
     public HistoryController(InventoryContext context)
     {
         _context = context;

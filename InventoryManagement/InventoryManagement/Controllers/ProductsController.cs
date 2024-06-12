@@ -10,9 +10,11 @@ using OfficeOpenXml;
 using System.IO;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
 {
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly InventoryContext _context;
@@ -21,7 +23,6 @@ namespace InventoryManagement.Controllers
         {
             _context = context;
         }
-
         // GET: Products
         public async Task<IActionResult> Index(
             string searchString,

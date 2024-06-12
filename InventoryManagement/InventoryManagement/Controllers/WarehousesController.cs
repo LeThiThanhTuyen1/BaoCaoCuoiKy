@@ -11,6 +11,7 @@ using InventoryManagement.Data;
 
 namespace InventoryManagement.Controllers
 {
+    [Authorize]
     public class WarehousesController : Controller
     {
         private readonly InventoryContext _context;

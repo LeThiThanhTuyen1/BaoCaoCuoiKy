@@ -1,6 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Http
 @using System.Security.Claims
-
+@{
+    ViewData["Title"] = "Home Page";
+    var user = User.Identity;
+    var role = user.IsAuthenticated ? User.FindFirst(ClaimTypes.Role)?.Value : null;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,55 +82,33 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarsExample04">
                                 <ul class="navbar-nav mr-auto">
-                                    @{
-                                        var user = User.Identity;
-                                        var role = user.IsAuthenticated ? User.FindFirst(ClaimTypes.Role)?.Value : null;
-                                    }
-
                                     @if (role == "Admin")
                                     {
-                                        <div class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý tài khoản</a>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quản lý tài khoản</a>
                                             <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Accounts" asp-action="Index">Tài khoản</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Managers" asp-action="Index">Người quản lý</a>
-                                                </li>
+                                                <a class="dropdown-item" asp-area="" asp-controller="Accounts" asp-action="Index">Tài khoản</a>
+                                                <a class="dropdown-item" asp-area="" asp-controller="Managers" asp-action="Index">Người quản lý</a>
                                             </div>
-                                        </div>
+                                        </li>
 
-                                        <div class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý kho</a>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quản lý kho</a>
                                             <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Index">Hàng hóa</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="History" asp-action="Index">Lịch sử xuất nhập kho</a>
-                                                </li>
+                                                <a class="dropdown-item" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
+                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Index">Hàng hóa</a>
+                                                <a class="dropdown-item" asp-area="" asp-controller="History" asp-action="Index">Lịch sử xuất nhập kho</a>
                                             </div>
-                                        </div>
+                                        </li>
 
-                                        <div class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý hàng hóa</a>
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quản lý hàng hóa</a>
                                             <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng hóa</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="NStatistics">Thống kê nhập kho</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="XStatistics">Thống kê xuất kho</a>
-                                                </li>
+                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng hóa</a>
+                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="NStatistics">Thống kê nhập kho</a>
+                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="XStatistics">Thống kê xuất kho</a>
                                             </div>
-                                        </div>
-
+                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
                                         </li>
@@ -152,10 +134,16 @@
                                     @if (User.Identity.IsAuthenticated)
                                     {
                                         <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Accounts" asp-action="Login">Đăng xuất</a>
+                                            <a  id="logoutLink" class="nav-link" href="#">Đăng xuất</a>
                                         </li>
                                     }
-                                </ul>                                
+                                    else
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="" asp-controller="Accounts" asp-action="Login">Đăng nhập</a>
+                                        </li>
+                                    }
+                                </ul>
                             </div>
                         </nav>
                     </div>
@@ -168,7 +156,7 @@
     <div class="container custom-container">
         <main role="main" class="pb-3">
             @RenderBody()
-        </main> 
+        </main>
     </div>
     <footer class="border-top footer text-muted">
         <div class="container">
@@ -194,7 +182,16 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        document.getElementById("logoutLink").addEventListener("click", function (event) {
+            event.preventDefault();
+            var form = document.createElement("form");
+            form.setAttribute("method", "post");
+            form.setAttribute("action", "/Accounts/Logout");
+            document.body.appendChild(form);
+            form.submit();
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false);
 </body>
 </html>

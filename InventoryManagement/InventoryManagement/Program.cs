@@ -1,4 +1,4 @@
-using InventoryManagement.Data;
+﻿using InventoryManagement.Data;
 using InventoryManagement.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
@@ -26,8 +26,9 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         .AddCookie(options =>
         {
             options.LoginPath = "/Accounts/Login";
-            options.LogoutPath = "/Accounts/Logout";
-            options.AccessDeniedPath = "/Home/AccessDenied";
+            options.AccessDeniedPath = "/Home/AccessDenied"; // Đường dẫn đến trang không có quyền truy cập
+            options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Thời gian sống của cookie
+            options.SlidingExpiration = true; // Gia hạn thời gian sống của cookie nếu người dùng tiếp tục hoạt động
         });
 
 builder.Services.AddAuthorization(options =>
@@ -74,15 +75,12 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Accounts}/{action=Login}/{id?}");
-});
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Accounts}/{action=Login}/{id?}");
 
 app.Run();

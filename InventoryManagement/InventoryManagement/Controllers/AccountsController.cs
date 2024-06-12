@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace InventoryManagement.Controllers
 {
+    [AllowAnonymous]
     public class AccountsController : Controller
     {
         private readonly InventoryContext _context;
@@ -40,7 +41,7 @@ namespace InventoryManagement.Controllers
             var account = _accountService.Authenticate(username, password);
             if (account == null)
             {
-                ViewBag.ErrorMessage = "Invalid username or password";
+                ViewBag.ErrorMessage = "Tên đăng nhập hoặc mật khẩu không chính xác";
                 return View();
             }
 
@@ -73,8 +74,17 @@ namespace InventoryManagement.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            // Xóa thông tin đăng nhập từ session
             HttpContext.Session.Clear();
-            return RedirectToAction("Index", "Home");
+
+            // Xóa cookie đăng nhập (nếu có)
+            if (Request.Cookies[".AspNetCore.Cookies"] != null)
+            {
+                Response.Cookies.Delete(".AspNetCore.Cookies");
+            }
+
+            return RedirectToAction("Login", "Accounts");
         }
 
         // GET: Accounts
