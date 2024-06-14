@@ -37,13 +37,27 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-layout {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .custom-container {
+            flex: 1;
+        }
         .footer {
-            bottom: 0;
             width: 100%;
             padding: 1rem 0;
             text-align: center;
+            margin-top: auto;
         }
-    </style>
+   </style>
 </head>
 <!-- body -->
 <body class="main-layout">

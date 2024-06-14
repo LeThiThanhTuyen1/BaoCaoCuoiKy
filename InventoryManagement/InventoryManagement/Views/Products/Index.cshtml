@@ -21,7 +21,7 @@
         <p class="form-inline">
             <label for="warehouseID" class="mr-2">Lọc theo kho:</label>
             @Html.DropDownList("warehouseID", (SelectList)ViewData["WarehouseList"], "Tất cả", new { @class = "form-control mr-2" })
-            <input type="submit" value="Tìm" class="btn btn-default mr-2" />
+            <input type="submit" value="Lọc" class="btn btn-default mr-2" />
             <span class="align-middle">|</span>
             <a asp-action="Index" class="ml-2">Trở về danh sách đầy đủ</a>
         </p>
