@@ -15,11 +15,10 @@
     <div class="form-actions no-color">
         <p>
             Tìm kiếm <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên hàng hóa" />
-            <input type="submit" value="Tìm" class="btn btn-default" /> |
-            <a asp-action="Index">Trở về</a>
+            <input type="submit" value="Tìm" class="btn btn-default" /> 
         </p>
         <p class="form-inline">
-            <label for="warehouseID" class="mr-2">Lọc theo kho:</label>
+            Lọc theo kho: 
             @Html.DropDownList("warehouseID", (SelectList)ViewData["WarehouseList"], "Tất cả", new { @class = "form-control mr-2" })
             <input type="submit" value="Lọc" class="btn btn-default mr-2" />
             <span class="align-middle">|</span>
