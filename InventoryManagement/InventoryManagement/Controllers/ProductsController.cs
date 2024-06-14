@@ -387,7 +387,7 @@ namespace InventoryManagement.Controllers
                     break;
             }
 
-            ViewData["TotalInventoryValue"] = totalInventoryValue;
+            ViewData["TotalInventoryValue"] = String.Format("{0:N0} VND", totalInventoryValue);
             ViewData["SupplierInventory"] = supplierInventory;
 
             return View();

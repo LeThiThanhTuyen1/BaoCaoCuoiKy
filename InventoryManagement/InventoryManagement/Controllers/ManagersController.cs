@@ -121,6 +121,7 @@ namespace InventoryManagement.Controllers
             {
                 _context.Add(manager);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Tạo mới người quản lý thành công!";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", manager.WarehouseID);
@@ -164,6 +165,7 @@ namespace InventoryManagement.Controllers
                 {
                     _context.Update(manager);
                     await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Chỉnh sửa người quản lý thành công!";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -212,6 +214,7 @@ namespace InventoryManagement.Controllers
             if (manager != null)
             {
                 _context.Managers.Remove(manager);
+                TempData["SuccessMessage"] = "Xóa người quản lý thành công!";
             }
 
             await _context.SaveChangesAsync();

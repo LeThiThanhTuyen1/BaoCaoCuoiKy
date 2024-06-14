@@ -3,6 +3,14 @@
 @{
     ViewData["Title"] = "Index";
 }
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="success-message" class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
@@ -16,8 +24,12 @@
     <div class="form-actions no-color">
         <p>
             Tìm kiếm quản lý: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên quản lý hoặc địa chỉ" />
-            Lọc theo kho: @Html.DropDownList("WarehouseFilter", (SelectList)ViewData["WarehouseList"], "Tất cả")
-            <input type="submit" value="Tìm" class="btn btn-default" /> |
+            
+            <input type="submit" value="Tìm" class="btn btn-default" />
+        </p>
+        <p class="form-inline">
+            Lọc theo kho: @Html.DropDownList("WarehouseFilter", (SelectList)ViewData["WarehouseList"], "Tất cả", new { @class = "form-control mr-2" })
+            <span class="align-middle"></span>
             <a asp-action="Index">Trở về danh sách đầy đủ</a>
         </p>
     </div>
@@ -90,3 +102,13 @@
    class="btn btn-default @nextDisabled">
     Sau
 </a>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var successMessage = document.getElementById("success-message");
+        if (successMessage) {
+            setTimeout(function () {
+                successMessage.style.display = 'none';
+            }, 5000);
+        }
+    });
+</script>
