@@ -12,8 +12,7 @@ public class InventoryContext : DbContext
     public DbSet<Account> Accounts { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Supplier> Suppliers { get; set; }
-    public DbSet<History> Histories { get; set; } 
-
+    public DbSet<History> Histories { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Manager>()

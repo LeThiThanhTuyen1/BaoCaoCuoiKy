@@ -6,6 +6,12 @@
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="success-message" class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
 <h1>Danh sách người quản lý</h1>
 
 <p>
@@ -17,8 +23,8 @@
         <p>
             Tìm kiếm quản lý: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" placeholder="Nhập tên quản lý hoặc địa chỉ" />
             Lọc theo kho: @Html.DropDownList("WarehouseFilter", (SelectList)ViewData["WarehouseList"], "Tất cả")
-            <input type="submit" value="Tìm" class="btn btn-default" /> |
             <a asp-action="Index">Trở về danh sách đầy đủ</a>
+            <input type="submit" value="Tìm" class="btn btn-default" />
         </p>
     </div>
 </form>
@@ -90,3 +96,13 @@
    class="btn btn-default @nextDisabled">
     Sau
 </a>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var successMessage = document.getElementById("success-message");
+        if (successMessage) {
+            setTimeout(function () {
+                successMessage.style.display = 'none';
+            }, 5000);
+        }
+    });
+</script>

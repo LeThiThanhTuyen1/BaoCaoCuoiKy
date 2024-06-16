@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace InventoryManagement.Models
@@ -13,13 +14,14 @@ namespace InventoryManagement.Models
         public string? Name { get; set; }
 
 
-        [Required(ErrorMessage = "Địa chỉ không được để trống.")]
-        [MaxLength(200, ErrorMessage = "Địa chỉ không được vượt quá 200 ký tự.")]
+        [RegularExpression(@"^[a-zA-Z0-9àáảãạâầấẩẫậăằắẳẵặèéẻẽẹêềếểễệìíỉĩịòóỏõọôồốổỗộơờớởỡợùúủũụưừứửữựỳýỷỹỵđÀÁẢÃẠÂẦẤẨẪẬĂẰẮẲẴẶÈÉẺẼẸÊỀẾỂỄỆÌÍỈĨỊÒÓỎÕỌÔỒỐỔỖỘƠỜỚỞỠỢÙÚỦŨỤƯỪỨỬỮỰỲÝỶỸỴĐ'\-,. ]*$", ErrorMessage = "Địa chỉ chỉ được chứa chữ cái, số, dấu nháy đơn, dấu gạch ngang, dấu phẩy, dấu chấm và khoảng trắng.")]
         [Display(Name = "Địa chỉ")]
         public string? Address { get; set; }
 
         [Required(ErrorMessage = "Liên hệ không được để trống.")]
-        [MaxLength(200, ErrorMessage = "Liên hệ không được vượt quá 200 ký tự.")]
+        [MinLength(10, ErrorMessage = "Liên hệ phải có ít nhất 10 ký tự.")]
+        [MaxLength(20, ErrorMessage = "Liên hệ không được vượt quá 20 ký tự.")]
+        [RegularExpression(@"^\d*$", ErrorMessage = "Liên hệ chỉ được chứa số.")]
         [Display(Name = "Liên hệ")]
         public string? Contact { get; set; }
 
@@ -29,7 +31,6 @@ namespace InventoryManagement.Models
         [Display(Name = "Kho")]
         public Warehouse? Warehouse { get; set; }
         public ICollection<Account>? Account { get; set; }
-
 
     }
 }

@@ -117,10 +117,15 @@ namespace InventoryManagement.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("ManagerId,Name,Address,Contact,WarehouseID")] Manager manager)
         {
+            if (_context.Managers.Any(m => m.Contact == manager.Contact))
+            {
+                ModelState.AddModelError("Contact", "Số điện thoại đã tồn tại.");
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(manager);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Tạo mới người quản lý thành công!";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["WarehouseID"] = new SelectList(_context.Warehouses, "WarehouseID", "Name", manager.WarehouseID);
@@ -164,6 +169,7 @@ namespace InventoryManagement.Controllers
                 {
                     _context.Update(manager);
                     await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Chỉnh sửa người quản lý thành công!";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -212,6 +218,7 @@ namespace InventoryManagement.Controllers
             if (manager != null)
             {
                 _context.Managers.Remove(manager);
+                TempData["SuccessMessage"] = "Xóa người quản lý thành công!";
             }
 
             await _context.SaveChangesAsync();
