@@ -1,17 +1,21 @@
 ﻿@model PaginatedList<InventoryManagement.Models.Warehouse>
-@using Microsoft.AspNetCore.Http
 @using System.Security.Claims
+
 @{
     ViewData["Title"] = "Kho hàng";
+    var user = User.Identity;
+    var role = user.IsAuthenticated ? User.FindFirst(ClaimTypes.Role)?.Value : null;
 }
+
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
-<h1>Danh sách kho hàng</h1>
 
+<h1>Danh sách kho hàng</h1>
 <p>
     <a asp-action="Create">Tạo mới</a>
 </p>
+
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
         <p>
@@ -32,10 +36,6 @@
             <th>
                 Vị trí
             </th>
-            @{
-                var user = User.Identity;
-                var role = user.IsAuthenticated ? User.FindFirst(ClaimTypes.Role)?.Value : null;
-            }
             @if (role == "Admin")
             {
                 <th>

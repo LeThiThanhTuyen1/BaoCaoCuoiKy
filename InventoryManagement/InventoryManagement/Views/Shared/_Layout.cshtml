@@ -83,65 +83,59 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarsExample04">
                                 <ul class="navbar-nav mr-auto">
-                                    @if (role == "Admin")
-                                    {
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý tài khoản</a>
-                                            <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                                                <a class="dropdown-item" asp-area="" asp-controller="Accounts" asp-action="Index">Tài khoản</a>
-                                                <a class="dropdown-item" asp-area="" asp-controller="Managers" asp-action="Index">Người quản lý</a>
-                                            </div>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý kho</a>
-                                            <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                                                <a class="dropdown-item" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
-                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Index">Hàng hóa</a>
-                                                <a class="dropdown-item" asp-area="" asp-controller="History" asp-action="Index">Lịch sử xuất nhập kho</a>
-                                            </div>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý hàng hóa</a>
-                                            <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng hóa</a>
-                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="NStatistics">Thống kê nhập kho</a>
-                                                <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="XStatistics">Thống kê xuất kho</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
-                                        </li>
-                                    }
-                                    else if (role == "Manager")
-                                    {
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Index">Hàng</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng</a>
-                                        </li>
-                                    }
                                     @if (User.Identity.IsAuthenticated)
                                     {
+                                        @if (role == "Admin")
+                                        {
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý tài khoản</a>
+                                                <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Accounts" asp-action="Index">Tài khoản</a>
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Managers" asp-action="Index">Người quản lý</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý kho</a>
+                                                <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Index">Hàng hóa</a>
+                                                    <a class="dropdown-item" asp-area="" asp-controller="History" asp-action="Index">Lịch sử xuất nhập kho</a>
+                                                </div>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý hàng hóa</a>
+                                                <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng hóa</a>
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="NStatistics">Thống kê nhập kho</a>
+                                                    <a class="dropdown-item" asp-area="" asp-controller="Products" asp-action="XStatistics">Thống kê xuất kho</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
+                                            </li>
+                                        }
+                                        else if (role == "Manager")
+                                        {
+                                            <li class="nav-item">
+                                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Index">Hàng</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" asp-area="" asp-controller="Warehouses" asp-action="Index">Kho</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" asp-area="" asp-controller="Suppliers" asp-action="Index">Nhà cung cấp</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Statistics">Thống kê hàng</a>
+                                            </li>
+                                        }
                                         <li class="nav-item">
-                                            <a  id="logoutLink" class="nav-link" href="#">Đăng xuất</a>
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Accounts" asp-action="Login">Đăng nhập</a>
+                                            <a class="nav-link" asp-controller="Accounts" asp-action="Logout">Đăng xuất</a>
                                         </li>
                                     }
                                 </ul>
@@ -179,16 +173,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        document.getElementById("logoutLink").addEventListener("click", function (event) {
-            event.preventDefault();
-            var form = document.createElement("form");
-            form.setAttribute("method", "post");
-            form.setAttribute("action", "/Accounts/Logout");
-            document.body.appendChild(form);
-            form.submit();
-        });
-    </script>
     @await RenderSectionAsync("Scripts", required: false);
 </body>
 <footer class="border-top footer text-muted ">
