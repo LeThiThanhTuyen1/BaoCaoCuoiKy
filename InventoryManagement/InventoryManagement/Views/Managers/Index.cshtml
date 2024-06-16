@@ -3,6 +3,14 @@
 @{
     ViewData["Title"] = "Index";
 }
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="success-message" class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 <head>
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
