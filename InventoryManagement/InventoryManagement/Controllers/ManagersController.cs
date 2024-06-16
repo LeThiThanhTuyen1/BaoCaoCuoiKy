@@ -117,6 +117,12 @@ namespace InventoryManagement.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("ManagerId,Name,Address,Contact,WarehouseID")] Manager manager)
         {
+
+            if (_context.Managers.Any(m => m.Contact == manager.Contact))
+            {
+                ModelState.AddModelError("Contact", "Số điện thoại đã tồn tại.");
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Add(manager);

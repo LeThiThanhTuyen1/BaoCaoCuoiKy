@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\managerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:1:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\views\\managers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -288,10 +292,6 @@
       "RelativeMoniker": "D:2:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:1:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:2:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\hp\\desktop\\new folder (4)\\inventorymanagement\\inventorymanagement\\views\\suppliers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:2:0:{1793D17B-CCA1-43F3-8153-CD903AE6FE00}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\views\\suppliers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -340,40 +340,26 @@
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ManagersController.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\ManagersController.cs",
               "RelativeToolTip": "InventoryManagement\\Controllers\\ManagersController.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAqwKcAAABXAAAA",
+              "ViewState": "AQIAAG4AAAAAAAAAAADwv+sAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T09:24:30.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "InventoryManagement\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAHUBAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAC8CAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:30:25.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T09:30:25.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Index.cshtml",
-              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Index.cshtml",
-              "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Index.cshtml",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAiwCAAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-26T15:44:54.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Index.cshtml",
@@ -381,12 +367,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Accounts\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-28T10:22:36.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T10:22:36.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Login.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Login.cshtml",
@@ -394,12 +379,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Accounts\\Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T14:33:22.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T14:33:22.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Statistics.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\Statistics.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
@@ -407,12 +391,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Products\\Statistics.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T06:09:16.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T06:09:16.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Index.cshtml",
@@ -420,12 +403,48 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Products\\Index.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T09:41:40.001Z",
+              "WhenOpened": "2024-05-24T09:41:40.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HistoryController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\HistoryController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\HistoryController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\HistoryController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\HistoryController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAwwHIAAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:24:30.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Manager.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\Manager.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\Manager.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T14:14:44.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Index.cshtml",
+              "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Index.cshtml",
+              "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Index.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwCAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T15:44:54.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AccountsController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\AccountsController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\AccountsController.cs",
@@ -433,25 +452,11 @@
               "RelativeToolTip": "InventoryManagement\\Controllers\\AccountsController.cs",
               "ViewState": "AQIAACwBAAAAAAAAAAAUwEsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T06:41:59.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T06:41:59.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HistoryController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\HistoryController.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\HistoryController.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\HistoryController.cs",
-              "RelativeToolTip": "InventoryManagement\\Controllers\\HistoryController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T09:24:30.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Edit.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Edit.cshtml",
@@ -459,12 +464,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Managers\\Edit.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-27T03:37:18.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T03:37:18.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\Edit.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Edit.cshtml",
@@ -472,12 +476,11 @@
               "RelativeToolTip": "InventoryManagement\\Views\\Products\\Edit.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-10T14:14:44.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T14:14:44.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\Delete.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Delete.cshtml",
@@ -489,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Supplier.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\Supplier.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\Supplier.cs",
@@ -501,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "StatisticsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\StatisticsViewModel.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\StatisticsViewModel.cs",
@@ -513,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\Create.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Create.cshtml",
@@ -525,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\Details.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Details.cshtml",
@@ -537,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Shared\\_Layout.cshtml",
@@ -549,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\Product.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\Product.cs",
@@ -561,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\HomeController.cs",
@@ -573,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "SuppliersController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\SuppliersController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\SuppliersController.cs",
@@ -585,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "WarehousesController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Controllers\\WarehousesController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\WarehousesController.cs",
@@ -597,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Home\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Home\\AccessDenied.cshtml",
@@ -609,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
@@ -621,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "_LoginLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Shared\\_LoginLayout.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Shared\\_LoginLayout.cshtml",
@@ -633,7 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Services\\AccountService.cs",
@@ -645,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "History.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\History.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\History.cs",
@@ -657,7 +660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Home\\Index.cshtml",
@@ -669,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\appsettings.json",
               "RelativeDocumentMoniker": "InventoryManagement\\appsettings.json",
@@ -681,7 +684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "PaginatedList.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\PaginatedList.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\PaginatedList.cs",
@@ -693,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "NStatistics.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\NStatistics.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\NStatistics.cshtml",
@@ -705,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\History\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\History\\Index.cshtml",
@@ -717,7 +720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "XStatistics.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\XStatistics.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\XStatistics.cshtml",
@@ -729,7 +732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Details.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Details.cshtml",
@@ -741,7 +744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Delete.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Delete.cshtml",
@@ -753,7 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Managers\\Create.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Managers\\Create.cshtml",
@@ -765,7 +768,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\FPT\\.nuget\\packages\\epplus\\7.1.3\\readme.txt",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\FPT\\.nuget\\packages\\epplus\\7.1.3\\readme.txt",
@@ -777,7 +780,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Suppliers\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Suppliers\\Index.cshtml",
@@ -789,7 +792,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Warehouses\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Warehouses\\Index.cshtml",
@@ -801,7 +804,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Suppliers\\Edit.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Suppliers\\Edit.cshtml",
@@ -813,7 +816,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "style-statics.css",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\style-statics.css",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\css\\style-statics.css",
@@ -825,7 +828,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\css\\style.css",
@@ -837,7 +840,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "SupplierProducts.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\SupplierProducts.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\SupplierProducts.cshtml",
@@ -849,7 +852,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\css\\site.css",
@@ -861,7 +864,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Delete.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Delete.cshtml",
@@ -873,7 +876,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Details.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Details.cshtml",
@@ -885,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "InventoryContext.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Data\\InventoryContext.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Data\\InventoryContext.cs",
@@ -897,7 +900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Data\\DbInitializer.cs",
@@ -921,7 +924,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\ErrorViewModel.cs",
@@ -933,7 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
@@ -966,18 +969,6 @@
               "ViewState": "AQIAAAwAAAAAAAAAAAAuwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-30T06:09:16.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "Manager.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\Manager.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Manager.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\Manager.cs",
-              "RelativeToolTip": "InventoryManagement\\Models\\Manager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T14:14:44.346Z"
             },
             {
               "$type": "Document",
@@ -1017,7 +1008,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Suppliers\\Delete.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Suppliers\\Delete.cshtml",
@@ -1029,7 +1020,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Suppliers\\Create.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Suppliers\\Create.cshtml",
@@ -1041,7 +1032,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Create.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Create.cshtml",
@@ -1053,7 +1044,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Models\\Account.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\Account.cs",
@@ -1065,7 +1056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets",
               "DocumentMoniker": "C:\\Users\\FPT\\Microsoft.NET.Sdk.StaticWebAssets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\FPT\\Microsoft.NET.Sdk.StaticWebAssets",
@@ -1077,7 +1068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Edit.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Edit.cshtml",
@@ -1089,7 +1080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "style-login.css",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style-login.css",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\jon\\css\\style-login.css",
@@ -1101,7 +1092,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\_ViewImports.cshtml",
@@ -1113,7 +1104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\_ViewStart.cshtml",
@@ -1125,7 +1116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Create.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Create.cshtml",
@@ -1137,7 +1128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Products\\Details.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Products\\Details.cshtml",
@@ -1149,7 +1140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Warehouses\\Delete.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Warehouses\\Delete.cshtml",
@@ -1161,7 +1152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Warehouses\\Edit.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Warehouses\\Edit.cshtml",
@@ -1173,7 +1164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Accounts\\Index.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Accounts\\Index.cshtml",
@@ -1185,7 +1176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "PaginatedList.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\PaginatedList.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\PaginatedList.cs",
@@ -1197,7 +1188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
@@ -1209,7 +1200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Views\\Warehouses\\Details.cshtml",
               "RelativeDocumentMoniker": "InventoryManagement\\Views\\Warehouses\\Details.cshtml",
@@ -1221,7 +1212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\style.css",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\jon\\css\\style.css",
@@ -1233,7 +1224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "font-awesome.min.css",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\jon\\css\\font-awesome.min.css",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\jon\\css\\font-awesome.min.css",
@@ -1245,7 +1236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "bootstrap-grid.css.map",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
@@ -1280,7 +1271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Services\\AccountService.cs",
@@ -1292,7 +1283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "bootstrap-grid.css.map",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\New folder (4)\\InventoryManagement\\InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
               "RelativeDocumentMoniker": "InventoryManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
@@ -1304,7 +1295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "dbo.Histories [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/InventoryManagement/True/SqlTable/dbo.Histories.sql",
               "ToolTip": "dbo.Histories [Data]",
@@ -1313,7 +1304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "dbo.Warehouse [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/InventoryManagement/True/SqlTable/dbo.Warehouse.sql",
               "ToolTip": "dbo.Warehouse [Data]",
